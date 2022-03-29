@@ -6,11 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Demo</title>
+    <link rel="stylesheet" href="CSS/style.css">
     <style>
-        body {
-            background-color: antiquewhite;
-        }
-        
         p {
             color: purple;
         }
@@ -43,56 +40,64 @@
 </head>
 
 <body>
-    <h1>Some HTML stuff first</h1>
-    <!--This is an unordered list-->
-    <ul>
-        <li>Apples</li>
-        <li>Sun</li>
-        <li>Sleep</li>
-    </ul>
-    <!--This is an ordered list-->
-    <h2>Here are some good movies</h2>
-    <ol>
-        <li>Spirited Away</li>
-        <li>Kiki's delivery Service</li>
-        <li>Totoro</li>
-    </ol>
-    <h2>Here is a table</h2>
-    <table>
-        <tr>
-            <th>Movie Name </th>
-            <th>Rating </th>
-            <th>Watch again?</th>
-        </tr>
-        <tr>
-            <td>Spirted Away</td>
-            <td>9.5/10</td>
-            <td>Definitely</td>
-        </tr>
-        <tr>
-            <td>Kiki's Delivery Service</td>
-            <td>9.5/10</td>
-            <td>Definitely</td>
-        </tr>
-        <tr>
-            <td>Totoro</td>
-            <td>9.5/10</td>
-            <td>Definitely</td>
-        </tr>
-    </table>
-    <h2>Lets do Some internal CSS</h2>
-    <p style="color:blue">I want this text to be blue</p>
-    <p style="color:aquamarine">I want this text to be aquamarine</p>
-    <p style="font-size:50px">I want this text to be really big</p>
-    <p style="font-size:5px">I want this text to be really small</p>
-    <p style="color:orange;font-size:24px;text-align:center">I want this to be orange, 24px, and centered</p>
+    <div class="div">
+        <h1>Some HTML stuff first</h1>
+        <!--This is an unordered list-->
+        <ul class="nav">
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+        </ul>
+        <!--This is an ordered list-->
+        <h2>Here are some good movies</h2>
+        <ol>
+            <li>Spirited Away</li>
+            <li>Kiki's delivery Service</li>
+            <li>Totoro</li>
+        </ol>
+        <h2>Here is a table</h2>
+        <table>
+            <tr>
+                <th>Movie Name </th>
+                <th>Rating </th>
+                <th>Watch again?</th>
+            </tr>
+            <tr>
+                <td>Spirted Away</td>
+                <td>9.5/10</td>
+                <td>Definitely</td>
+            </tr>
+            <tr>
+                <td>Kiki's Delivery Service</td>
+                <td>9.5/10</td>
+                <td>Definitely</td>
+            </tr>
+            <tr>
+                <td>Totoro</td>
+                <td>9.5/10</td>
+                <td>Definitely</td>
+            </tr>
+        </table>
+        <h2>Lets do Some internal CSS</h2>
+        <p style="color:blue">I want this text to be blue</p>
+        <p style="color:aquamarine">I want this text to be aquamarine</p>
+        <p style="font-size:50px">I want this text to be really big</p>
+        <p style="font-size:5px">I want this text to be really small</p>
+        <p style="color:orange;font-size:24px;text-align:center">I want this to be orange, 24px, and centered</p>
 
-    <h2>Let's do some internal css with selectors</h2>
-    <p id="blue-text">make this blue</p>
-    <p id="red-text">make this red</p>
-    <p class="small-text">make this small</p>
-    <p class="big-text">make this big</p>
-    <p>make this orange, 24px, and centered</p>
+        <h2>Let's do some internal css with selectors</h2>
+        <p id="blue-text">make this blue</p>
+        <p id="red-text">make this red</p>
+        <p class="small-text">make this small</p>
+        <p class="big-text">make this big</p>
+        <p>make this orange, 24px, and centered</p>
+    </div>
 </body>
 
 </html>
