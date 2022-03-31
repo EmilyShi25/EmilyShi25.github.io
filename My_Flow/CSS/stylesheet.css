@@ -3,7 +3,7 @@
     margin: 0px auto;
     border: 1px solid white;
     padding: 50px;
-    background-color: lightsteelblue;
+    background-color: rgb(209, 169, 181);
 }
 
 .nav {
@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: gray;
+    background-color: rgb(180, 203, 239);
 }
 
 ul.nav li {
@@ -27,7 +27,7 @@ ul.nav li a {
 }
 
 ul.nav li a:hover {
-    background-color: #555;
+    background-color: rgb(217, 215, 176);
     color: white;
 }
 
