@@ -34,3 +34,27 @@ ul.nav li a:hover {
 .active {
     background-color: black;
 }
+
+p {
+    font-family: carbon-fence, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: carbon-phyber, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: carbon-phyber, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-family: carbon-phyber, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
