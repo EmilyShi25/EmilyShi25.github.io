@@ -2,6 +2,14 @@ body {
     background-color: antiquewhite;
 }
 
+p {
+    color: aliceblue
+}
+
+.br-color {
+    color: white
+}
+
 .div {
     width: 1000px;
     margin: 0px auto;
@@ -34,12 +42,6 @@ ul.nav li a:hover {
     background-color: #111;
 }
 
-ul.nav a {
-    display: block;
-    padding: 8px;
-    background-color: #dddd;
-}
-
 .active {
-    background-color: white;
+    background-color: plum;
 }
