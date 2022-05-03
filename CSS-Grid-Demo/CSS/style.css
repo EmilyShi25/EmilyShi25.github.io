@@ -5,15 +5,15 @@
 }
 
 .grid-item {
-    background-color: lightblue;
-    text-align: center;
+    background-color: slategray;
+    text-align: left;
     font-size: 30px;
     padding: 20px;
 }
 
 .grid-item2 {
-    background-color: red;
-    text-align: center;
+    background-color: grey;
+    text-align: left;
     font-size: 30px;
     padding: 20px;
 }
@@ -58,7 +58,7 @@ ul.nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: grey;
 }
 
 ul.nav li {
@@ -67,16 +67,16 @@ ul.nav li {
 
 ul.nav li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 ul.nav li a:hover {
-    background-color: #111;
+    background-color: grey;
 }
 
 .active {
-    background-color: plum;
+    background-color: saddlebrown;
 }
