@@ -73,6 +73,12 @@ ul {
     font-style: normal;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px
+}
+
 .grid-item {
     background-color: slategray;
     text-align: center;
@@ -84,7 +90,7 @@ ul {
 
 .chart {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 5;
 }
 
 .events {
