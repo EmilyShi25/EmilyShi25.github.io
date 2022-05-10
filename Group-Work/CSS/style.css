@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(51, 51, 51)
+    background-color: rgb(113, 115, 117)
 }
 
 .div {
@@ -7,7 +7,7 @@ body {
     margin: 0px auto;
     border: 1px solid black;
     padding: 50px;
-    background-color: rgb(113, 115, 117);
+    background-color: rgb(51, 51, 51);
     border-radius: 20px;
 }
 
@@ -28,7 +28,7 @@ ul.nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(113, 115, 117);
     border-radius: 10px;
 }
 
@@ -75,19 +75,19 @@ ul {
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto 50px;
+    grid-template-columns: auto auto auto auto;
     grid-gap: 15px
 }
 
 .grid-item {
-    background-color: slategray;
+    background-color: rgb(170, 193, 248);
     text-align: center;
     font-size: 30px;
     padding: 20px;
 }
 
 .grid-item2 {
-    background-color: slategray;
+    background-color: rgb(170, 193, 248);
     text-align: center;
     font-size: 30px;
     padding: 20px;
@@ -96,10 +96,12 @@ ul {
 }
 
 .grid-item3 {
-    background-color: slategray;
+    background-color: rgb(243, 177, 169);
     text-align: center;
     font-size: 30px;
     padding: 20px;
+    width: 150px;
+    border-radius: 20px;
 }
 
 .chart {
