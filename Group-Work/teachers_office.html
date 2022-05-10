@@ -12,7 +12,7 @@
     <style>
         .grid-container {
             display: grid;
-            grid-template-columns: 33% 33% 34%;
+            grid-template-columns: auto auto auto;
             grid-gap: 10px
         }
         
@@ -29,28 +29,28 @@
         }
         
         .navmenu {
-            grid-column: 1/span 3;
+            grid-column: 1;
             grid-row: 1;
         }
         
         .main-image {
-            grid-column: 1/span 3;
+            grid-column: 1;
             grid-row: 2;
         }
         
         .main1 {
-            grid-column: 1/span 2;
+            grid-column: 1;
             grid-row: 3;
         }
         
         .main2 {
-            grid-column: 1/span 2;
+            grid-column: 1;
             grid-row: 5;
         }
         
         .sidenav {
             grid-column: 3;
-            grid-row: 3/span 3;
+            grid-row: 3;
         }
         
         .support1 {
@@ -98,34 +98,20 @@
 
         <h2 style="color:rgb(170,193,248)">Here is a chance to get to know some of your future teachers! Finding your teacher's office can be hard, so they are all listed here for your convienence.</h2>
         <div class="grid-container">
-            <div class="grid-item navmenu">
-                <p>hi</p>
+            <div class="grid-item chart">
             </div>
-
-            <div class="grid-item main-image" style="text-align: center;">
-                <p>sienna</p>
+            <div class="grid-item events">
             </div>
-
-            <div class="grid-item main1">
-                <p>boo</p>
+            <div class="grid-item courses">
             </div>
-
-            <div class="grid-item2 support1">
-                <p>ello</p>
+            <div class="grid-item clubs">
             </div>
-
-            <div class="grid-item2 support2">
-                <p>:)</p>
+            <div class="grid-item canvas">
             </div>
-
-            <div class="grid-item main2">
-                <p>heyy</p>
-            </div>
-
-            <div class="grid-item sidenav">
-                <p>hihi</p>
+            <div class="grid-item sports">
             </div>
         </div>
+    </div>
 </body>
 
 </html>
