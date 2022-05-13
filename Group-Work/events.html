@@ -11,32 +11,73 @@
     <style>
         .grid-container {
             display: grid;
-            grid-template-columns: 33% 33% 34%;
-            grid-gap: 10px
-        }
-        
-        .grid-item {
-            background-color: slategray;
-            text-align: center;
-            font-size: 30px;
-            padding: 20px;
-            width: 300px;
-            height: 250px;
+            grid-template-columns: 33% 33% 33%;
+            grid-gap: 15px
         }
         
         .theatere {
-            grid-column: 1;
-            grid-row: 1 / span 2;
+            grid-column: 1 / span 2;
+            grid-row: 1;
         }
         
         .music {
-            grid-column: 1;
-            grid-row: 2 / span 2;
+            grid-column: 1 / span 2;
+            grid-row: 2;
         }
         
         .art {
-            grid-column: 1;
-            grid-row: 3 /span 2;
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+        
+        .sports {
+            grid-column: 3;
+            grid-row: 3;
+        }
+        
+        .dances {
+            grid-column: 3;
+            grid-row: 2;
+        }
+        
+        .clubs {
+            grid-column: 3;
+            grid-row: 1;
+        }
+        
+        .video {
+            grid-column: 1 / span 3;
+            grid-row: 4;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid white;
+            border-collapse: collapse;
+            font-size: 25px;
+            color: white;
+            font-family: ff-uberhand-text-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        img {
+            max-width: 70%;
+            height: auto;
+            border: 5px double rgb(243, 177, 169);
+        }
+        
+        h6 {
+            font-family: ff-uberhand-text-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: rgb(243, 177, 169);
         }
     </style>
 </head>
@@ -72,20 +113,64 @@
             </li>
         </ul>
 
-        <h2 style="color:rgb(170,193,248)">Social events are a very important aspect of EPS culture, here are some annual occurring events.</h2>
+        <h2>Social events are a very important aspect of EPS culture, here are some annually occurring events.</h2>
 
         <div class="grid-container">
             <div class="grid-item theatere">
-                <p>theatere</p>
+                <h3>Theater:</h3>
+                <p>Each year, EPS directs three plays, one each trimester.</p>
+                <p>In the fall, the midde schoolers have the opportunity to audition. The winter trimester play is upper school, and the spring trimester is an all school musical. People from every grade are encouraged to participate. Additionally, EPS offers
+                    elective theater classes, so each student has the opportunity to explore theater in their classes.</p>
+                <p>Here are some examples of past plays!</p>
+                <table>
+                    <tr>
+                        <th>MS/US</th>
+                        <th>Name</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>MS (Fall)</td>
+                        <td>Revenge of the Space Pandas</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>US (Winter)</td>
+                        <td>She Kills Monsters</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>All School (Spring)</td>
+                        <td>Spamalot</td>
+                        <td>2022</td>
+                    </tr>
+
+                </table>
+
+                <br>
+
+                <img src="images/theatere.JPG" alt="Theater Production">
+
             </div>
             <div class="grid-item music">
-                <p>music</p>
+                <h3>Music:</h3>
+                <p>EPS has many Choir and Music classes, there is a concert each trimester to showcase the work.</p>
+                <ul style="font-size:20px; color:white">
+                    <li>Upper school choir occurs during the usual block schedule. Their concert is the second to last one.</li>
+                    <li>Chamber choir is the advanced choir, they practice from 7:30-8:15am, before usual classes begin. Their concert is the last one.</li>
+                    <li>The instrumental music emsemble has the opportunity to play during the usual block schedule, they perform at the same time as the upper school choir.</li>
+                    <li>Chamber music ensemble, like the Chamber choir, is the advanced ensemble and practices before school begins, they perform at the same time as the Chamber choir.</li>
+                </ul>
+                <img src="images/choir.jpg" alt="Chamber Choir and Orchestra">
             </div>
             <div class="grid-item art">
-                <p>art</p>
+                <h3>Art:</h3>
+                <p>EPS offers art course during the day, both digital and physical. Art is hung around campus often, but it can also be seen at the art showcase that coincides with music concert.</p>
+                <img src="images/art.JPG" alt="Art">
             </div>
             <div class="grid-item sports ">
-                <p>sports</p>
+                <h3>Sports:</h3>
+                <p>Each sport team has games or races that students and family are encouraged to attend. The frecency depends on the team - it can be multiple times a week to once every few months. In addition, some of our teams play at the homecoming or
+                    tailgate games. For more information about our teams, click <a href="sports.html" style="color:rgb(243,177,169)">here.</a></p>
             </div>
             <div class="grid-item dances ">
                 <p>dances</p>
@@ -93,6 +178,14 @@
             <div class="grid-item clubs ">
                 <p>clubs</p>
             </div>
+            <div class="grid-item video ">
+                <h3>For more information about arts and athletcis at EPS, see the videos below.</h3>
+                <h6>Arts:</h6>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9fcpsiOrxq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h6>Athletics:</h6>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AlfRk1GDNLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
         </div>
     </div>
 </body>
