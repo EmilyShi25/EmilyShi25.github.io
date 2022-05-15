@@ -12,7 +12,7 @@
     <style>
         .grid-container {
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: 33% 33% 34%;
             grid-gap: 10px
         }
         
@@ -28,39 +28,137 @@
             padding: 20px;
         }
         
-        .navmenu {
+        .albu {
             grid-column: 1;
             grid-row: 1;
         }
         
-        .main-image {
+        .bandel {
+            grid-column: 2;
+            grid-row: 1;
+        }
+        
+        .behrmann {
+            grid-column: 3;
+            grid-row: 1;
+        }
+        
+        .botero {
             grid-column: 1;
             grid-row: 2;
         }
         
-        .main1 {
+        .fassino {
+            grid-column: 2;
+            grid-row: 2;
+        }
+        
+        .ferguson {
+            grid-column: 3;
+            grid-row: 2;
+        }
+        
+        .gould {
             grid-column: 1;
             grid-row: 3;
         }
         
-        .main2 {
-            grid-column: 1;
-            grid-row: 5;
+        .kaminsky {
+            grid-column: 2;
+            grid-row: 3;
         }
         
-        .sidenav {
+        .lao {
             grid-column: 3;
             grid-row: 3;
         }
         
-        .support1 {
+        .larner-lewis {
             grid-column: 1;
             grid-row: 4;
         }
         
-        .support2 {
+        .mckinney {
             grid-column: 2;
-            grid-row: 4
+            grid-row: 4;
+        }
+        
+        .mclane {
+            grid-column: 3;
+            grid-row: 4;
+        }
+        
+        .olsen {
+            grid-column: 1;
+            grid-row: 5;
+        }
+        
+        .ruiz {
+            grid-column: 2;
+            grid-row: 5;
+        }
+        
+        .sanderson {
+            grid-column: 3;
+            grid-row: 5;
+        }
+        
+        .sayles {
+            grid-column: 1;
+            grid-row: 6;
+        }
+        
+        .stearns {
+            grid-column: 2;
+            grid-row: 6;
+        }
+        
+        .wassink {
+            grid-column: 3;
+            grid-row: 6;
+        }
+        
+        .name {
+            text-align: center;
+        }
+        
+        .class {
+            text-align: center;
+        }
+        
+        .email {
+            color: rgb(243, 177, 169);
+            font-family: ff-uberhand-text-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            margin-left: 65px;
+        }
+        
+        img {
+            display: block;
+            max-width: 50%;
+            height: auto;
+            border: 5px double rgb(243, 177, 169);
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 25px;
+            /*NEW FEATURE */
+        }
+        /*NEW FEATURE BELOW*/
+        
+        @keyframes color {
+            from {
+                color: rgb(243, 177, 169);
+            }
+            to {
+                color: rgb(170, 193, 248);
+            }
+        }
+        
+        h2 {
+            animation-name: color;
+            animation-duration: 7s;
         }
     </style>
 </head>
@@ -71,7 +169,7 @@
 
 <body>
     <div class="div">
-        <h1>Offices</h1>
+        <h1>9th Grade Teachers</h1>
         <ul style="color:rgb(243,177,169)" class="nav">
             <li>
                 <a href="index.html">Home</a>
@@ -96,20 +194,135 @@
             </li>
         </ul>
 
-        <h2 style="color:rgb(170,193,248)">Here is a chance to get to know some of your future teachers! Finding your teacher's office can be hard, so they are all listed here for your convienence.</h2>
+        <h2 style="color:rgb(170,193,248)">Here is a chance to get to know some of your future teachers, their department, and email! Only core academic class (social science, lit, spanish, math, biology) teachers are listed here, as elective teachers are mostly the same as middle school
+            and vary depending on the class. Keep in mind, these teachers are the ninth grade 2021-22 school year. </h2>
         <div class="grid-container">
-            <div class="grid-item chart">
+            <div class="grid-item albu">
+                <img src="images/albu.JPG" alt="Dana Albu" class="img">
+                <h3 class="name">Dana Albu</h3>
+                <p class="class">Spanish 2</p>
+                <a href="mailto: dalbu@eastsideprep.org?" class="email">dalbu@eastsideprep.org</a>
             </div>
-            <div class="grid-item events">
+
+            <div class="grid-item bandel">
+                <img src="images/bandel.JPG" alt="Jeff Bandel">
+                <h3 class="name">Jeff Bandel</h3>
+                <p class="class">Social Science</p>
+                <a href="mailto: jbandel@eastsideprep.org?" class="email">jbandel@eastsideprep.org</a>
             </div>
-            <div class="grid-item courses">
+
+            <div class="grid-item behrmann">
+                <img src="images/behrmann.JPG" alt="Adrienne Behrmann" class="img">
+                <h3 class="name">Adrienne Behrmann</h3>
+                <p class="class">Geomoetry + Calculus</p>
+                <a href="mailto: abehrmann@eastsideprep.org?" class="email" style="margin-left:55px;">abehrmann@eastsideprep.org</a>
             </div>
-            <div class="grid-item clubs">
+
+            <div class="grid-item botero">
+                <img src="images/botero.JPG" alt="Laura Botero">
+                <h3 class="name">Laura Botero</h3>
+                <p class="class">Spanish 4</p>
+                <a href="mailto: lbotero@eastsideprep.org?" class="email">lbotero@eastsideprep.org</a>
             </div>
-            <div class="grid-item canvas">
+
+            <div class="grid-item fassino">
+                <img src="images/fassino.JPG" alt="Steve Fassino Albu">
+                <h3 class="name">Steve Fassino</h3>
+                <p class="class">Algebra 2 + Calculus</p>
+                <a href="mailto: sfassino@eastsideprep.org?" class="email" style="margin-left:57px;">sfassino@eastsideprep.org</a>
             </div>
-            <div class="grid-item sports">
+
+            <div class="grid-item ferguson">
+                <img src="images/ferguson.JPG" alt="Emma Ferguson">
+                <h3 class="name">Emma Ferguson</h3>
+                <p class="class">Spanish 3</p>
+                <a href="mailto: eferguson@eastsideprep.org?" class="email" style="margin-left:55px;">eferguson@eastsideprep.org</a>
             </div>
+
+            <div class="grid-item gould">
+                <img src="images/gould.JPG" alt="Henry Gould">
+                <h3 class="name">Henry Gould</h3>
+                <p class="class">Literature</p>
+                <a href="mailto: hgould@eastsideprep.org?" class="email" style="margin-left:60px;">hgould@eastsideprep.org</a>
+            </div>
+
+            <div class="grid-item kaminsky">
+                <img src="images/kaminsky.JPG" alt="John Kaminsky">
+                <h3 class="name">John Kaminsky</h3>
+                <p class="class">Pre-Calculus</p>
+                <a href="mailto: jkaminsky@eastsideprep.org?" class="email" style="margin-left:50px;">jkaminsky@eastsideprep.org</a>
+            </div>
+
+            <div class="grid-item lao">
+                <img src="images/lao.JPG" alt="David Lao">
+                <h3 class="name">David Lao</h3>
+                <p class="class">Biology</p>
+                <a href="mailto: dlao@eastsideprep.org?" class="email" style="margin-left:75px;">dlao@eastsideprep.org</a>
+            </div>
+
+            <div class="grid-item larner-lewis">
+                <img src="images/larner-lewis.JPG" alt="Johnathan Larner-Lewis">
+                <h3 class="name">Johnathan Larner-Lewis</h3>
+                <p class="class">Literature</p>
+                <a href="mailto: jlarner-lewis@eastsideprep.org?" class="email" style="margin-left:40px;">jlarner-lewis@eastsideprep.org</a>
+            </div>
+
+            <div class="grid-item mckinney">
+                <img src="images/mckinney.JPG" alt="Bess McKinney">
+                <h3 class="name">Bess McKinney</h3>
+                <p class="class">Social Science</p>
+                <a href="mailto: bmckinney@eastsideprep.org?" class="email" style="margin-left:47px;">bmckinney@eastsideprep.org</a>
+            </div>
+
+            <div class="grid-item mclane">
+                <img src="images/mcLane.JPG" alt="Caitlin McLane">
+                <h3 class="name">Caitlin McLane</h3>
+                <p class="class">Social Science</p>
+                <a href="mailto: cmclane@eastsideprep.org?" class="email">cmclane@eastsideprep.org</a>
+            </div>
+
+            <div class="grid-item olsen">
+                <img src="images/olsen.JPG" alt="Elena Olsen">
+                <h3 class="name">Elena Olsen</h3>
+                <p class="class">Literature</p>
+                <a href="mailto: eolsen@eastsideprep.org?" class="email" style="margin-left:65px;">eolsen@eastsideprep.org</a>
+            </div>
+
+            <div class="grid-item ruiz">
+                <img src="images/ruiz.JPG" alt="Josefa Ruiz">
+                <h3 class="name">Josefa Ruiz</h3>
+                <p class="class">Spanish 3</p>
+                <a href="mailto: jruiz@eastsideprep.org?" class="email" style="margin-left:65px;">jruiz@eastsideprep.org</a>
+            </div>
+
+            <div class="grid-item sanderson">
+                <img src="images/ferguson.JPG" alt="Emma Ferguson">
+                <h3 class="name">Jeff Sanderson</h3>
+                <p class="class">Pre-Calculus</p>
+                <a href="mailto: jsanderson@eastsideprep.org?" class="email">jsanderson@eastsideprep.org</a>
+            </div>
+
+            <div class="grid-item sayles">
+                <img src="images/sayles.JPG" alt="Varity Sayles">
+                <h3 class="name">Varity Sayles</h3>
+                <p class="class">Literature</p>
+                <a href="mailto: vsayles@eastsideprep.org?" class="email">vsayles@eastsideprep.org</a>
+            </div>
+
+            <div class="grid-item stearns">
+                <img src="images/stearns.JPG" alt="Maddie Stearns">
+                <h3 class="name">Maddie Stearns</h3>
+                <p class="class">Algebra 2</p>
+                <a href="mailto: mstearns@eastsideprep.org?" class="email" style="margin-left:60px;">mstearns@eastsideprep.org</a>
+            </div>
+
+            <div class="grid-item wassink">
+                <img src="images/wassink.JPG" alt="Kip Wassink">
+                <h3 class="name">Kip Wassink</h3>
+                <p class="class">Biology</p>
+                <a href="mailto: kwassink@eastsideprep.org?" class="email">kwassink@eastsideprep.org</a>
+            </div>
+
         </div>
     </div>
 </body>
