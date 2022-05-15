@@ -9,7 +9,120 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/owz5rwd.css">
     <style>
-
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+        }
+        
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            grid-column: 14 / span 4;
+        }
+        
+        .grid-item {
+            background-color: rgb(194, 209, 244);
+            ;
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        
+        .main1 {
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 3;
+        }
+        
+        .main3 {
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 3;
+        }
+        
+        table,
+        th,
+        td {
+            border: 5px solid rgb(236, 161, 177);
+            border-collapse: collapse;
+        }
+        
+        th {
+            font-family: ff-uberhand-text-pro, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        
+        td {
+            font-family: ff-uberhand-text-pro, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        
+        a {
+            font-family: ff-uberhand-text-pro, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 20px;
+            color: white;
+            font-stretch: condensed;
+            font-variant: initial;
+        }
+        
+        .insidedash1 {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+            border: dashed 3px gray;
+        }
+        
+        .insideaccount {
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 1;
+            border: dashed 3px gray;
+        }
+        
+        .insidedash2 {
+            grid-column: 3 / span 1;
+            grid-row: 1 / span 1;
+            border: dashed 3px gray;
+        }
+        
+        .insidecourses {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+            border: dashed 3px gray;
+        }
+        
+        .insidegroups {
+            grid-column: 2 / span 1;
+            grid-row: 2 / span 1;
+            border: dashed 3px gray;
+        }
+        
+        .insidecalendar {
+            grid-column: 3 / span 1;
+            grid-row: 2 / span 1;
+            border: dashed 3px gray;
+        }
+        
+        .insideinbox {
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+            border: dashed 3px gray;
+        }
+        
+        .insidehistory {
+            grid-column: 2 / span 1;
+            grid-row: 3 / span 1;
+            border: dashed 3px gray;
+        }
+        
+        .insidehelp {
+            grid-column: 3 / span 1;
+            grid-row: 3 / span 1;
+            border: dashed 3px gray;
+        }
     </style>
 </head>
 <div class="footer">
@@ -18,7 +131,7 @@
 
 <body>
     <div class="div">
-        <h1>How to use Canvas!</h1>
+        <h1>Sports</h1>
         <ul style="color:rgb(243,177,169)" class="nav">
             <li>
                 <a href="index.html">Home</a>
@@ -42,20 +155,104 @@
                 <a href="courses.html">Courses</a>
             </li>
         </ul>
-        <p>Hi 9th graders I'm sure that now that you are in highschool, you might be wondering what sports 9th grade has to offer!</p>
-        <h1>Whether you are a current athlete, or an aspiring one, you might want to check out one of following sports to either keep pursuing your passion or to try somehting new!</h1>
-        <div class="grid-item">
+        <p>Now that you are apart of EPS, obviously you are going to have some homework! Canvas is a great tool that we use to track our homework assignments, classwork assignments, future tests, class content/syllabus, and so much more. However, it can
+            be a little tricky to work your way around it if you are new. Hopefully, you can use this page to give you a helping hand in figuring your way around canvas to keep you ontop of your assignments!</p>
+
+        <div class="grid-container">
+            <div class="grid-item main3">
+                <h2>Canvas's page options/navigation bar:</h2>
+                <div class="grid-container">
+                    <br>
+                    <div class="grid-item insidedash1">
+                        <h3>Dashboard Easy Access:</h3>
+                        <img src="images/canvas_nav_bar_dash1.jpg" width="25px">
+                        <p>For easy access, you can click on this button to take you to your dashboard and automatically to today's date. The Dashboard section is a page where you can either look at all of your current class in card veiw, or look at the
+                            assignments you or your teachers have put for you by the day. To switch between veiws you can just click the 3 dots in the top right:</p>
+                        <img src="images/dashboard_options.png" width="190px">
+                        <p>You can also look at your "Recent Activity" and a To-Do List on your right. Scrolling further down, you can see what assignments teachers have given you feedback on in the "Recent Feedback".</p>
+                    </div>
+                    <br>
+                    <div class="grid-item insideaccount">
+                        <h3>My Account:</h3>
+                        <img src="images/canvas_nav_bar_account.jpg" width="25px">
+                        <p>In your account there are many options of things that correspond to your account. They include: a logout option, Four11 Dashboard, Notifications, Files, Settings, ePortfolios, Online Course Requests, QR for Mobile Login, Global
+                            Announcements, and the option to use High Contrast.</p>
+
+                    </div>
+                    <br>
+                    <div class="grid-item insidedash2">
+                        <h3>Dashboard Normal Access:</h3>
+                        <img src="images/canvas_nav_bar_dash2.jpg" width="25px">
+                        <p>This button is just another way to get to your dashboard/refresh it to today's date.</p>
+                    </div>
+                    <br>
+                    <div class="grid-item insidecourses">
+                        <h3>Courses:</h3>
+                        <img src="images/canvas_nav_bar_courses.jpg" width="25px">
+                        <p>Here, you can look at all the different courses that you are taking right now, there even is a "All Courses" button where you can take a look at previous courses that you have taken, however you should have none of those if you
+                            are an incoming freshman. </p>
+                    </div>
+                    <br>
+                    <div class="grid-item insidegroups">
+                        <h3>Groups:</h3>
+                        <img src="images/canvas_nav_bar_groups.jpg" width="25px">
+                        <p>With this button you can take a look at all the groups that teachers have put together/placed you in. For example, if you are doing a group project and only one team member in your group needs to submit, then a teacher might put
+                            you in a group for organization.</p>
+                    </div>
+                    <br>
+                    <div class="grid-item insidecalendar">
+                        <h3>Calendar:</h3>
+                        <img src="images/canvas_nav_bar_calendar.jpg" width="25px">
+                        <p>In this mode you can look at all your homework, classwork, and other assignments in a calendar form. With this feature, and looking in month form, you can take a look at all of your work for your current week, and all of the other
+                            weeks in the month. However, there is s till more!</p>
+                        <img src="Images/calendar_choices.png" width="200px">
+                        <p>With the different modes you can take a look at your assignments in many ways. In week, you can see you assignments in a veiw similar to calendar, but only shows the assignments of that current week. In agenda, you can look at
+                            your assignments in vertical order (very similar to dashboard list veiw).</p>
+                    </div>
+                    <br>
+                    <div class="grid-item insideinbox">
+                        <h3>Inbox:</h3>
+                        <img src="images/canvas_nav_bar_inbox.jpg" width="25px">
+                        <p>Inbox allows you to see conversations that teachers might have started with you. Whether that is for missing assignments, changed submittion dates, or any reason that a teacher might want to reach out to you. </p>
+                    </div>
+                    <br>
+                    <div class="grid-item insidehistory">
+                        <h3>History:</h3>
+                        <img src="images/canvas_nav_bar_history.jpg" width="25px">
+                        <p>Here, you can look at your recent history of all the assignments you have taken a look at recently.</p>
+                    </div>
+                    <br>
+                    <div class="grid-item insidehelp">
+                        <h3>Help:</h3>
+                        <img src="images/canvas_nav_bar_help.jpg" width="25px">
+                        <p>If any of this was hard to understand and you still have quesitons, you can take a look at the "Help" page to see if it proides the answer to your questions. It can lead you to many other resources in the following:</p>
+                        <img src="images/other_resources_help.png" width="230px">
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <h1>Now that we have covered, the basics of Canvas, I am sure that you still have a few more questions. </h1>
+            <div class="grid-container">
+                <div class="grid-container2">
+                    <div class="grid-item main3">
+
+                        <p>Take a look at the YouTube video below if you still have questions, it might help answer them.</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/x3j8V-uLkNw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        <br>
+                        <a>If you want to go to EPS's home page to take a look at their offical website, take a look</a>
+                        <a href="https://eastsideprep.org/" target="blank">here.</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
         </div>
-        <div class="grid-item">hello
-        </div>
-        <div class="grid-item">hi
-        </div>
-        <div class="grid-item">
-        </div>
-        <div class="grid-item">
-        </div>
-        <div class="grid-item">
-        </div>
+
     </div>
 </body>
 
