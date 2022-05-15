@@ -142,6 +142,23 @@
             border: 5px double rgb(243, 177, 169);
             margin-left: auto;
             margin-right: auto;
+            border-radius: 25px;
+            /*NEW FEATURE */
+        }
+        /*NEW FEATURE BELOW*/
+        
+        @keyframes color {
+            from {
+                color: rgb(243, 177, 169);
+            }
+            to {
+                color: rgb(170, 193, 248);
+            }
+        }
+        
+        h2 {
+            animation-name: color;
+            animation-duration: 7s;
         }
     </style>
 </head>
@@ -181,7 +198,7 @@
             and vary depending on the class. Keep in mind, these teachers are the ninth grade 2021-22 school year. </h2>
         <div class="grid-container">
             <div class="grid-item albu">
-                <img src="images/albu.JPG" alt="Dana Albu">
+                <img src="images/albu.JPG" alt="Dana Albu" class="img">
                 <h3 class="name">Dana Albu</h3>
                 <p class="class">Spanish 2</p>
                 <a href="mailto: dalbu@eastsideprep.org?" class="email">dalbu@eastsideprep.org</a>
@@ -195,7 +212,7 @@
             </div>
 
             <div class="grid-item behrmann">
-                <img src="images/behrmann.JPG" alt="Adrienne Behrmann">
+                <img src="images/behrmann.JPG" alt="Adrienne Behrmann" class="img">
                 <h3 class="name">Adrienne Behrmann</h3>
                 <p class="class">Geomoetry + Calculus</p>
                 <a href="mailto: abehrmann@eastsideprep.org?" class="email" style="margin-left:55px;">abehrmann@eastsideprep.org</a>
