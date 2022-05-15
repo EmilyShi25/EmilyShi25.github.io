@@ -90,12 +90,6 @@ ul {
     grid-gap: 15px
 }
 
-.grid-container2 {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 5px
-}
-
 .grid-item {
     background-color: rgb(170, 193, 248);
     text-align: center;
@@ -165,9 +159,4 @@ ul {
     background-color: rgb(243, 177, 169);
     color: rgb(113, 115, 117);
     text-align: center;
-}
-
-.prescreen {
-    grid-column: 1;
-    grid-row: 1;
 }
