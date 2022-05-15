@@ -11,7 +11,7 @@
     <style>
         .grid-container {
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: 33% 33% 33%;
             grid-gap: 15px
         }
         
@@ -44,12 +44,90 @@
             grid-column: 3;
             grid-row: 1;
         }
+        
+        .video {
+            grid-column: 1 / span 3;
+            grid-row: 4;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid white;
+            border-collapse: collapse;
+            font-size: 25px;
+            color: white;
+            font-family: ff-uberhand-text-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        img {
+            max-width: 80%;
+            height: auto;
+            border: 5px double rgb(243, 177, 169);
+            border-radius: 25px;
+            /*NEW FEATURE */
+        }
+        
+        h6 {
+            font-family: ff-uberhand-text-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: rgb(243, 177, 169);
+        }
+        
+        .list {
+            font-size: 15px;
+            color: white;
+            font-family: ff-uberhand-text-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        /*NEW FEATURE BELOW*/
+        
+        @keyframes color {
+            from {
+                color: rgb(243, 177, 169);
+            }
+            to {
+                color: rgb(170, 193, 248);
+            }
+        }
+        
+        h2 {
+            animation-name: color;
+            animation-duration: 7s;
+        }
     </style>
 </head>
 
 <div class="footer">
     <footer>Created By Sienna Roggeveen</footer>
 </div>
+
+<!--- /*Challenge Paragraph (Sienna):*/
+        /*I feel like the project really challenged me.*/
+        /*I had a hard time in the grid demo understanding how it worked, so when I found out that*/
+        /*I would have to use the grid in this project, I was a little nervous. I think I spent*/
+        /*at least an hour and a half soley trying to make the grid format itself correctly.*/
+        /*However, when I finally got it to work, I was really proud and felt that I pushed myself*/
+        /*to make the website look a lot better using the CSS grid. Though I did copy and paste*/
+        /*the grid code from the demo we did in class, I feel like I still really understand what*/
+        /*each attribute's purpose is in the code. Additionally, adding the 2 new CSS elements*/
+        /*was challenging. I wasn't sure what to add, since I felt that we had already learned*/
+        /*about most of the CSS features. I decided to really challenge myself by adding one*/
+        /*that I knew would be more complicated than others: the animations. It did take me*/
+        /*quite a while to figure it out, first I didn't change one of the background color*/
+        /*attributes, then I forgot to change the "div" element to "h2". At first, it messed up*/
+        /*the formatting of my entire website. But, I kept perservering and was able to successfully*/
+        /*animate the h2 tags in my websites. I also figured out how to round the borders of images,*/
+        /*something that probably took me longer than it should have, but it was worth it in the end.*/-->
 
 <body>
     <div class="div">
@@ -78,27 +156,136 @@
             </li>
         </ul>
 
-        <h2 style="color:rgb(170,193,248)">Social events are a very important aspect of EPS culture, here are some annual occurring events.</h2>
+        <div class="color">
+            <h2>Social events are very important aspects of EPS culture, here are some annually occurring events.</h2>
+        </div>
 
         <div class="grid-container">
             <div class="grid-item theatere">
-                <p>theatere</p>
+                <h3>Theater:</h3>
+                <p>Each year, EPS directs three plays, one each trimester.</p>
+                <p>In the fall, the midde schoolers have the opportunity to audition. The winter trimester play is upper school, and the spring trimester is an all school musical. People from every grade are encouraged to participate. Additionally, EPS offers
+                    elective theater classes, so each student has the opportunity to explore theater in their classes.</p>
+                <p>Here are some examples of past plays!</p>
+                <table>
+
+                    <tr>
+                        <th>MS/US</th>
+                        <th>Name</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>MS (Fall)</td>
+                        <td>Charlie and the Chocolate Factory</td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td>All School (Spring)</td>
+                        <td>The Wizard of Oz</td>
+                        <td>2018</td>
+                    </tr>
+                    <tr>
+                        <td>US (Winter)</td>
+                        <td>A Midsummer Night's Dream</td>
+                        <td>2019</td>
+                    </tr>
+                    <td>US (Winter)</td>
+                    <td>The Laramie Project</td>
+                    <td>2020</td>
+                    <tr>
+                        <td>MS (Fall)</td>
+                        <td>Revenge of the Space Pandas</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>US (Winter)</td>
+                        <td>She Kills Monsters</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>All School (Spring)</td>
+                        <td>Spamalot</td>
+                        <td>2022</td>
+                    </tr>
+
+                </table>
+
+                <br>
+                <br>
+
+                <img src="images/theatere.JPG" alt="Theater Production">
+
             </div>
             <div class="grid-item music">
-                <p>music</p>
+                <h3>Music:</h3>
+                <p>EPS has many Choir and Music classes, there is a concert each trimester to showcase the work.</p>
+                <ul style="font-size:20px; color:white">
+                    <li>Upper school choir occurs during the usual block schedule. Their concert is the second to last one.</li>
+                    <li>Chamber choir is the advanced choir, they practice from 7:30-8:15am, before usual classes begin. Their concert is the last one.</li>
+                    <li>The instrumental music emsemble has the opportunity to play during the usual block schedule, they perform at the same time as the upper school choir.</li>
+                    <li>Chamber music ensemble, like the Chamber choir, is the advanced ensemble and practices before school begins, they perform at the same time as the Chamber choir.</li>
+                </ul>
+                <img src="images/choir.jpg" alt="Chamber Choir and Orchestra">
             </div>
             <div class="grid-item art">
-                <p>art</p>
+                <h3>Art:</h3>
+                <p>EPS offers art course during the day, both digital and physical. Art is hung around campus often, but it can also be seen at the art showcase that coincides with music concert.</p>
+                <img src="images/art.JPG" alt="Art">
             </div>
             <div class="grid-item sports ">
-                <p>sports</p>
+                <h3>Sports:</h3>
+                <p>Each sport team has games or races that students and family are encouraged to attend. The frecency depends on the team - it can be multiple times a week to once every few months. In addition, some of our teams play at the homecoming or
+                    tailgate games. For more information about our teams, click <a href="sports.html" style="color:rgb(243,177,169)">here.</a></p>
             </div>
             <div class="grid-item dances ">
-                <p>dances</p>
+                <h3>Social Events:</h3>
+                <p>Each year, EPS holds homecoming, open to all upper school students. Prom occurs in the spring trimester and all 11-12 graders are encouraged to go.</p>
+                <p>In addition, there are some low-key social events that happen throughout the school year. For example, this year was a ice skating social.</p>
+                <p>EPS also has annual EBC weeks where students can travel to different states and explore. </p>
+
+                <img src="images/hoco.JPG" alt="Homecoming">
+                <p></p>
             </div>
             <div class="grid-item clubs ">
-                <p>clubs</p>
+                <h3>Clubs:</h3>
+                <p>For more information on academic teams, click <a href="clubs.html" style="color:rgb(243,177,169)">here.</a></p>
+                <p>In addition to our academic clubs, other day clubs meet once a week during the day. Some clubs, like Allies for Equity, APIDA, Buisness club, etc, invite guest speakers or organize after school events (ex. Culture Night) occasionally.</p>
+                <p>Here is the list of day clubs:</p>
+                <ol class="list">
+                    <li>Allies for Equity</li>
+                    <li>APIDA</li>
+                    <li>AQUILA</li>
+                    <li>Board Game Club</li>
+                    <li>Buisness Club</li>
+                    <li>Chess Club</li>
+                    <li>Civic Engagement</li>
+                    <li>Calssical Music Appreciation</li>
+                    <li>Composition Mag</li>
+                    <li>Creative Writing</li>
+                    <li>Environmental Club</li>
+                    <li>Fantasy Football Club</li>
+                    <li>Fiber Arts</li>
+                    <li>Film Society</li>
+                    <li>Girls Empowerment Club</li>
+                    <li>Hack Club</li>
+                    <li>Spanish Table</li>
+                    <li>Med Club</li>
+                    <li>Mental Health</li>
+                    <li>Music Production and Broadcast</li>
+                    <li>Pride Alliance</li>
+                    <li>The Eagle Eye</li>
+                    <li>Weightlifting</li>
+                    <li>Bridge</li>
+                    <li>Ping Pong</li>
+                    <p class="list">Please note: these clubs are examples from the 2021-22 school year, and are always changing, students have opportunity to create their own clubs.</p>
+                </ol>
             </div>
+            <div class="grid-item video ">
+                <h3>For more information about art at EPS, see the video below.</h3>
+                <h6>Arts:</h6>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9fcpsiOrxq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
         </div>
     </div>
 </body>

@@ -95,6 +95,7 @@ ul {
     text-align: center;
     font-size: 30px;
     padding: 20px;
+    border-radius: 20px;
 }
 
 .grid-item2 {
@@ -104,14 +105,14 @@ ul {
     padding: 20px;
     width: 200px;
     height: 300px;
+    border-radius: 20px
 }
 
 .grid-item3 {
     background-color: rgb(243, 177, 169);
-    text-align: center;
     font-size: 30px;
     padding: 20px;
-    width: 150px;
+    width: 180px;
     border-radius: 20px;
 }
 
