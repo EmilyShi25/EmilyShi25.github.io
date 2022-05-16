@@ -4,11 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <title>Courses</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/owz5rwd.css">
 
+    <style>
+        .main {
+            grid-column: 1/ span 3;
+            grid-row: 1;
+        }
+        
+        .main2 {
+            grid-column: 4;
+            grid-row: 1;
+        }
+        
+        .mainheader1 {
+            grid-column: 1/ span 2;
+            grid-row: 2;
+        }
+        
+        .mainheader2 {
+            grid-column: 3/ span 2;
+            grid-row: 2;
+        }
+        
+        .table1 {
+            grid-column: 1/ span 2;
+            grid-row: 3;
+        }
+        
+        .tableextra1 {
+            grid-column: 1/ span 2;
+            grid-row: 4;
+        }
+        
+        .table2 {
+            grid-column: 3/ span 2;
+            grid-row: 3;
+        }
+        
+        .tableextra2 {
+            grid-column: 3/ span 2;
+            grid-row: 4;
+        }
+        
+        table,
+        td {
+            color: white;
+            font-size: 20px;
+            border: 5px groove;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 
 <body>
@@ -38,21 +87,147 @@
             </li>
         </ul>
 
-        <p>Page for list of EPS Courses</p>
+        <h2>Here, you get to learn about all the exciting and engaging courses you can take as a 9th grader!</h2>
 
-        <div class="grid-item main">
-            <h1>Courses:</h1>
+        <div class="grid-container">
+            <div class="grid-item main">
+                <p style="font-size: 30px;">The following video discusses more about the EPS academic curriculum and courses.</p>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/cJtvlzGl-WE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+
+            <div class="grid-item main2">
+                <img src="images/courses.png" alt="Eagle Eye Newspaper" style="width: 350px; height: 400px;">
+            </div>
+
+            <div class="grid-item mainheader1">
+                <h3>Regular</h3>
+            </div>
+
+            <div class="grid-item table1">
+                <p>Humanities Course Pairings:</p>
+                <table>
+                    <tr class="lightgreen">
+                        <td>Boundaries Literature & History:</td>
+                        <td>Explores boundaries within the self as well as in social and political aspects</td>
+                    </tr>
+                    <tr>
+                        <td>Connections Literature & History:</td>
+                        <td>Explores connections within the identity and culture of the self and others </td>
+                    </tr>
+                    <tr>
+                        <td>Exchange Literature & History:</td>
+                        <td>Focuses on exchange of power, knowledge and more between cultures and religions </td>
+                    </tr>
+                    <tr>
+                        <td>Migration Literature & History:</td>
+                        <td>Focuses on the geographic migration, interaction and adaptation of people, ideas and cultures</td>
+                    </tr>
+                    <tr>
+                        <td>Origins Literature & History:</td>
+                        <td>Delves into origin and development of culture, stories and early civilizations</td>
+                    </tr>
+                    <tr>
+                        <td>Authority Literature & History:</td>
+                        <td>Delves into how authority is developed, maintained and eradicated in early civilizations</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="grid-item tableextra1">
+                <p>Other Academic Courses:</p>
+                <table>
+                    <tr class="lightgreen">
+                        <td>Biology:</td>
+                        <td>Science class which advances understanding on evolution, biochemistry, genetics, neuroscience and more</td>
+                    </tr>
+                    <tr>
+                        <td>Spanish 1-4:</td>
+                        <td>Language class developing listening, speaking, reading and writing skills in Spanish</td>
+                    </tr>
+                    <tr>
+                        <td>Math:</td>
+                        <td>Various levels ranging from Geometry to Calculus to enhance problem solving skills and application of math in the real world</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="grid-item mainheader2">
+                <h3>Electives</h3>
+            </div>
+
+            <div class="grid-item table2">
+                <p>Art electives:</p>
+                <table>
+                    <tr class="lightgreen">
+                        <td>Acting 1 & 2:</td>
+                        <td>Builds a basic foundation on performance skills such as vocal project, body moevemnts and text analysis</td>
+                    </tr>
+                    <tr>
+                        <td>Stagecraft:</td>
+                        <td>Introduction on creating set design, props, costumes and makeup for productions</td>
+                    </tr>
+                    <tr>
+                        <td>Vocal Rock Studio:</td>
+                        <td>Develops vocal and music-reading skills via the lens of a specific music era or genre</td>
+                    </tr>
+                    <tr>
+                        <td>Rock Orchestra:</td>
+                        <td>Develops basic musician skills such as breathing, music theory and rhythm work through various instruments</td>
+                    </tr>
+                    <tr>
+                        <td>Drawing and Painting 1 & 2:</td>
+                        <td>Explores traditional historical drawing paintin styles to create 2d art using various materials and surfaces</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Photography:</td>
+                        <td>Introduces students to capturing the world using photography and learning about the history and application of photography</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Filmmaking 1 & 2:</td>
+                        <td>Focuses on basic filmmaking and editing techniques</td>
+                    </tr>
+                    <tr>
+                        <td>Graphic Design 1 & 2:</td>
+                        <td>Students work with design software to utilize both words and images to communicate ideas</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="grid-item tableextra2">
+                <p>Sports and Tech electives:</p>
+                <table>
+                    <tr class="lightgreen">
+                        <td>PE Wellness:</td>
+                        <td>Educates students on physical fitness, nutrition, mental health and more</td>
+                    </tr>
+                    <tr>
+                        <td>PE: Customized Training to Maximize Performance</td>
+                        <td>Student customizes their own athletic experience to improve on their own fitness</td>
+                    </tr>
+                    <tr>
+                        <td>Physical Education:</td>
+                        <td>Builds strength and agility through team sports and personal fitness plans</td>
+                    </tr>
+                    <tr>
+                        <td>PE Yoga:</td>
+                        <td>Allows students to learn the basics of yoga by building strength and developing a mind-body connection</td>
+                    </tr>
+                    <tr>
+                        <td>Programming 1 & 2</td>
+                        <td>Learn elements like variables, loops and functions from languages like Java and Python</td>
+                    </tr>
+                    <tr>
+                        <td>Web Design 1 & 2</td>
+                        <td>Focuses on teaching students basic concepts to create their very own website</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-
-        <div class="grid-item mainheader1">
-            <h2>Regular</h2>
-        </div>
-
-        <div class="grid-item mainheader2">
-            <h2>Electives</h2>
-        </div>
-
+        <h1>To view more courses, you can look at </h1>
+        <a style="font-family: ff-uberhand-text-pro, sans-serif; font-weight: 800; font-size: 30px; color: rgb(170, 193, 248)" href="http://courses.eastsideprep.org/" target="blank">this website.</a>
     </div>
+
 
     <div class="footer">
         <footer>Created by &copy; AM </footer>
