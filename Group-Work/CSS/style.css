@@ -48,6 +48,13 @@ ul.nav li a {
     text-decoration: none;
 }
 
+
+/*NEW FEATURE*/
+
+a:hover {
+    color: blanchedalmond;
+}
+
 .active {
     background-color: rgb(243, 177, 169);
 }
@@ -64,13 +71,6 @@ table {
     font-weight: 700;
     font-style: normal;
     color: rgb(243, 177, 169)
-}
-
-
-/*NEW FEATURE*/
-
-a:hover {
-    background-color: rgb(51, 51, 51);
 }
 
 h1 {
