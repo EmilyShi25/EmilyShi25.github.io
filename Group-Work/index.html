@@ -9,13 +9,11 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/owz5rwd.css">
     <style>
-        .li {
-            font-size: 20px;
-        }
-        
         .ul {
             text-align: left;
+            font-size: 20px;
         }
+        /*NEW FEATURE*/
         
         .a-visited {
             background-color: rgb(113, 115, 117);
@@ -24,19 +22,48 @@
             text-decoration: none;
             text-align: center;
             display: inline-block;
+            /*NEW FEATURE*/
             border-radius: 20px;
         }
         
-        a:hover {
-            background-color: rgb(51, 51, 51);
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /*NEW FEATURE*/
+        
+        .container {
+            display: flex;
+            align-items: center;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid;
         }
     </style>
 </head>
+<!--
+    Short Paragraph: 
+    This project I felt that I challenged myself with exploring many different new features that I always thought to use but never did.
+    In a way I am greatful for the extra class-day that we got to work on this because I got to add buttons for my links.
+    I was familiar with grid in python but I got to explore more of what I could do with the grid.
+    I do want to do more with grid and make the page more fancy but time-wise I felt that it wouldn't be for the best.
+    The design of this website did challenge me, with what color I should go with and how things should be placed to make this website look better
+    The boder-radius in my opinion was of great help to pulling things together and I am glad that I found it. 
+    However, even though this was a huge step-up from the websites I've made so far, there are still many areas that I would like to alter and experiment with. 
+    One of the most challenging things in this project is communication. Because we cannot change things on other people's pages it makes it hard to fix problems effectively.
+    So, I was wondering if there are ways to solve this problem. 
+-->
 
 <body>
     <div class="div">
-        <h1>Introduction</h1>
-        <p>-better version of the eps sites</p>
+        <div class="container">
+            <h1 style="float: left;">Introduction</h1>
+            <p> : The better version of EPS websites</p>
+        </div>
         <ul style="color:rgb(243,177,169)" class="nav">
             <li class="active">
                 <a href="index.html">Home</a>
@@ -60,11 +87,25 @@
                 <a href="courses.html">Courses</a>
             </li>
         </ul>
-        <h2>Helping you not get lost in what ever school is since 2022</h2>
-
-
+        <br>
+        <br>
+        <br>
+        <h2>Helping you not get lost in what ever school is since 2022:</h2>
+        <div class="container">
+            <img style="float: left;" src="Images/tali_drawing.jpg" alt="A drawing of Tali, Main building" height="450" width="600">
+            <p style="text-align: center;">This page is a more straightforward version of the EPS website.
+                <br>It consists important information that would take longer to find on the actual website.
+                <br>We specified each page with details that would upcoming ninth graders who might not be familiar with EPS.
+                <br>Many information had to found in different websites which could be tedious. Hence, the creation of this page.
+            </p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2>Pages:</h2>
         <div class="grid-container">
             <div class="grid-item2 chart">
+
                 <h3>Teachers</h3>
                 <p>
                     <br> This page will be dedicated to all the ninth grade teachers and their emails.
@@ -101,30 +142,53 @@
                 </p>
             </div>
             <div class="grid-item3 side-nav">
+                <p style="text-align: center;">Links to important resources</p>
 
-                <ul class="ul" style="list-style: none;">
-
+                <ul class="ul" style="text-align: left;">
                     <li>
-                        <a class="li a-visited" href="https://prescreen.eastsideprep.org/ " target="_blank">PreScreen</a>
+                        <a class="a-visited" href="https://prescreen.eastsideprep.org/ " target="_blank">Prescreen</a>
                     </li>
-
                     <p>The health check up to take every morning</p>
-
-                    <li class="li ">
-                        <a class="li a-visited" href="https://www.epschedule.com/ " target="_blank ">Schedule</a>
+                    <li>
+                        <a class=" a-visited" href="https://www.epschedule.com/ " target="_blank ">Schedule</a>
                     </li>
-
                     <p>The place to check you schedule</p>
-
-                    <li class="li ">
+                    <li>
                         <a class="a-visited" href="http://courses.eastsideprep.org/ " target="_blank ">Calendar</a>
                     </li>
-
                     <p>Shows upcoming events and lunch details</p>
                 </ul>
 
             </div>
+
         </div>
+        <br>
+        <br>
+        <br>
+        <p>Below are some details on schedules that might get confusing as you start ninth grade:</p>
+        <table>
+            <tr>
+                <th>Schedule</th>
+                <th>Advisory</th>
+                <th>Office Hours</th>
+                <th>Clubs</th>
+            </tr>
+            <tr>
+                <td>Classes are split into two days: ABCD periods on one day and EFGH periods on another, then they get flipped to DCBA and HGFE. This is where EPS schedule comes in handy if it gets hard to memorize which order your classes are supposed to
+                    be in. </td>
+                <td>Advisory usually on tuesday and sometimes monday (basically homeroom)</td>
+                <td>Office Hours are on Wednesday</td>
+                <td>Clubs are on Thursday</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <p>Here is the EPS campus tour to see some of the buildings:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EgSzMMigyQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <!--NEW FEATURE: Emojis-->
+        <p>hopefully this was helpful! &#128516</p>
     </div>
     <div class="footer ">
         <footer>Emily Shi</footer>
