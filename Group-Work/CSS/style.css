@@ -59,6 +59,20 @@ p {
     font-size: 20px;
 }
 
+table {
+    font-family: ff-uberhand-text-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(243, 177, 169)
+}
+
+
+/*NEW FEATURE*/
+
+a:hover {
+    background-color: rgb(51, 51, 51);
+}
+
 h1 {
     font-family: ff-uberhand-text-pro, sans-serif;
     font-weight: 700;
