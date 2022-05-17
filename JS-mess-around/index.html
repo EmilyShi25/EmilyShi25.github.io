@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Mess Around</title>
+</head>
+
+<body>
+    <h1>Let's learn javascript</h1>
+    <h2>How do we do onclick events and alerts?</h2>
+    <a href="https://www.eastsideprep.org/" target="_blank" onclick="alert('Warning! you are navigating to an external page')">Go to my school's website</a>
+    <br>
+    <a href="https://emilyshi25.github.io/Group-Work/index.html" target="blank" onclick="alert('Warning! you are navigating to an external page')">My website</a>
+    <h2>How do I change HTML content with javascript?</h2>
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret') .innerHTML='Nana nana nana batman'; 
+    document.getElementById('secret').style.display='block'">Reveal</button>
+    <button onclick="document.getElementById('secret') .style.display='none'">Hide</button>
+    <h2>Two truths and a lie</h2>
+    <ul>
+        <li>I started playing piano when i was three but now I don't anymore</li>
+        <li>I used to be on a swim team</li>
+        <li>I used to be really good at ice skating but I hurt my leg</li>
+    </ul>
+    <p id="tf"></p>
+    <button onclick="document.getElementById('tf') .innerHTML='I did not hurt my leg and I was okay at ice skating'; 
+    document.getElementById('tf').style.display='block'">Reveal</button>
+    <button onclick="document.getElementById('tf') .style.display='none'">Hide</button>
+
+
+
+
+    <h2>How to we change an image with javascript?</h2>
+    <button onclick="document.getElementById('myImage').src='Images/pic_bulbon.gif'">Turn on the light</button>
+
+    <img id="myImage" src="Images/pic_bulboff.gif" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='Images/pic_bulboff.gif'">Turn off the light</button>
+
+
+
+
+
+    <p id="alice">Hi I am alice</p>
+    <button onclick="shrinkAlice()">Eat Cake</button>
+    <button onclick="enlargeAlice()">Drink Potion</button>
+    <br>
+    <br>
+    <br>
+
+    <button onclick="muahaha()">Change color?</button>
+    <button onclick="muahahareverse()">Change back?</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="border">
+        <h2>How borders work</h2>
+    </div>
+    <br>
+    <button onclick="borders()">Add borders?</button>
+    <script>
+        function shrinkAlice() {
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'blue'
+            aliceParagraph.style.fontSize = '10px'
+        }
+
+        function enlargeAlice() {
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'red'
+            aliceParagraph.style.fontSize = '35px'
+
+        }
+
+        function muahaha() {
+            document.body.style.backgroundColor = "beige";
+        }
+
+        function muahahareverse() {
+            document.body.style.backgroundColor = "white";
+        }
+
+        function borders() {
+            document.getElementById("border").style.border = "thick solid #0000FF";
+        }
+    </script>
+
+
+</body>
+
+</html>
