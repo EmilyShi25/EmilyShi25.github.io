@@ -1,0 +1,57 @@
+body {
+    background-color: antiquewhite;
+}
+
+p {
+    color: aliceblue
+}
+
+.br-color {
+    color: white
+}
+
+.div {
+    width: 1250px;
+    margin: 0px auto;
+    border: 1px solid black;
+    padding: 100px;
+    background-color: black;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    left: 0;
+}
+
+ul.nav li {
+    float: right;
+}
+
+ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 50px 16px;
+    text-decoration: none;
+    float: right;
+}
+
+ul.nav li a:hover {
+    color: grey;
+}
+
+.active {
+    color: grey;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
