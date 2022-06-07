@@ -1,5 +1,5 @@
 body {
-    background-color: antiquewhite;
+    background-color: black;
 }
 
 p {
@@ -23,6 +23,7 @@ ul.nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: fixed;
     background-color: rgb(0, 0, 0);
     top: 0;
     left: 0;
@@ -43,6 +44,7 @@ ul.nav li a {
 
 ul.nav li a:hover {
     color: grey;
+    border-radius: 15px;
 }
 
 .active {
@@ -54,4 +56,112 @@ ul.nav li a:hover {
     width: 50%;
     border: 3px solid green;
     padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px
+}
+
+.grid-item {
+    background-color: black;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.grid-containerc {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+}
+
+.grid-itemc {
+    background-color: black;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.about-us {
+    grid-column: 1/span 3;
+    grid-row: 1;
+}
+
+.rheader {
+    grid-column: 1;
+    grid-row: 1;
+    border-bottom: double red;
+}
+
+.sheader {
+    grid-column: 2;
+    grid-row: 1;
+    border-bottom: double red;
+}
+
+.bheader {
+    grid-column: 3;
+    grid-row: 1;
+    border-bottom: double red;
+}
+
+.rtime {
+    grid-column: 1;
+    grid-row: 2;
+    border-bottom: double red;
+}
+
+.stime {
+    grid-column: 2;
+    grid-row: 2;
+    border-bottom: double red;
+}
+
+.btime {
+    grid-column: 3;
+    grid-row: 2;
+    border-bottom: double red;
+}
+
+.radress {
+    grid-column: 1;
+    grid-row: 3;
+    border-bottom: double red;
+}
+
+.sadress {
+    grid-column: 2;
+    grid-row: 3;
+    border-bottom: double red;
+}
+
+.badress {
+    grid-column: 3;
+    grid-row: 3;
+    border-bottom: double red;
+}
+
+.rphone {
+    grid-column: 1;
+    grid-row: 4;
+    border-bottom: double red;
+}
+
+.sphone {
+    grid-column: 2;
+    grid-row: 4;
+    border-bottom: double red;
+}
+
+.bphone {
+    grid-column: 3;
+    grid-row: 4;
+    border-bottom: double red;
+}
+
+.emptyspacec {
+    grid-column: 1/ span 3;
+    grid-row: 5;
 }
