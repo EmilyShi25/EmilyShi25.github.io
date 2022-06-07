@@ -51,13 +51,6 @@ ul.nav li a:hover {
     color: grey;
 }
 
-.center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -164,4 +157,56 @@ ul.nav li a:hover {
 .emptyspacec {
     grid-column: 1/ span 3;
     grid-row: 5;
+}
+
+.grid-containerm1 {
+    display: grid;
+    grid-template-columns: 20% auto auto 20%;
+    grid-gap: 10px;
+}
+
+.grid-itemm {
+    background-color: black;
+    font-size: 15px;
+    padding: 10px;
+    text-align: left;
+}
+
+.h {
+    grid-column: 2/ span 2;
+    grid-row: 1;
+    border-bottom: red solid;
+}
+
+.c1 {
+    grid-column: 2;
+    grid-row: 2;
+    border-left: dashed;
+    border-bottom: dashed;
+}
+
+.c2 {
+    grid-column: 3;
+    grid-row: 2;
+    border-right: dashed;
+    border-bottom: dashed;
+}
+
+.spice {
+    grid-column: 2/span 2;
+    grid-row: 2;
+}
+
+.wsp1 {
+    grid-column: 2;
+    grid-row: 3;
+    border-left: dashed;
+    border-bottom: dashed;
+}
+
+.wsp2 {
+    grid-column: 3;
+    grid-row: 3;
+    border-right: dashed;
+    border-bottom: dashed;
 }
