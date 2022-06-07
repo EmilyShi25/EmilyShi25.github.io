@@ -101,6 +101,7 @@
 </head>
 
 <body>
+
     <div class="div">
         <ul class="nav" style="z-index: 5; width: 100%;">
             <h2 style="color: white; padding: 40px;">STONE</h2>
@@ -122,73 +123,75 @@
             </li>
         </ul>
     </div>
-    <div class="border">
-        <h4 style="color: white">Please click on the buttons and answer the questions below to order:</h4>
-        <br>
-        <button onclick="myName()"> Enter Name</button>
-        <p id="name"></p>
-        <script>
-            function myName() {
-                let person = prompt("Please enter your name");
-                if (person != null) {
-                    document.getElementById("name").innerHTML =
-                        "Hello " + person + "! What would you like to order today?";
+    <div class="grid-containerm1">
+        <div class="border grid-itemm order">
+            <h4 style="color: white">Please click on the buttons and answer the questions below to order:</h4>
+            <br>
+            <button onclick="myName()"> Enter Name</button>
+            <p id="name"></p>
+            <script>
+                function myName() {
+                    let person = prompt("Please enter your name");
+                    if (person != null) {
+                        document.getElementById("name").innerHTML =
+                            "Hello " + person + "! What would you like to order today?";
+                    }
                 }
-            }
-        </script>
+            </script>
 
-        <button onclick="phonenumber()">Enter Phone Number</button>
-        <p id="phonenumber"></p>
-        <script>
-            function phonenumber() {
-                let person = prompt("Please enter your phone number");
-                if (person != null) {
-                    document.getElementById("phonenumber").innerHTML =
-                        "We will send a confirmation text after you order!";
+            <button onclick="phonenumber()">Enter Phone Number</button>
+            <p id="phonenumber"></p>
+            <script>
+                function phonenumber() {
+                    let person = prompt("Please enter your phone number");
+                    if (person != null) {
+                        document.getElementById("phonenumber").innerHTML =
+                            "We will send a confirmation text after you order!";
+                    }
                 }
-            }
-        </script>
+            </script>
 
-        <button onclick="order()">Enter Order</button>
-        <p id="order"></p>
-        <script>
-            function order() {
-                let person = prompt("Please enter your name");
-                if (person != null) {
-                    document.getElementById("order").innerHTML =
-                        "We will send a text message to confirm the orders";
+            <button onclick="order()">Enter Order</button>
+            <p id="order"></p>
+            <script>
+                function order() {
+                    let person = prompt("Please enter your name");
+                    if (person != null) {
+                        document.getElementById("order").innerHTML =
+                            "We will send a text message to confirm the orders";
+                    }
                 }
-            }
-        </script>
+            </script>
 
-        <button onclick="code()">Enter Address</button>
-        <p id="code"></p>
-        <script>
-            function code() {
-                let person = prompt("Please enter your card information");
-                if (person != null) {
-                    document.getElementById("address").innerHTML =
-                        "Your order shall be send after address is entered!";
+            <button onclick="code()">Enter card information</button>
+            <p id="code"></p>
+            <script>
+                function code() {
+                    let person = prompt("Please enter your card information");
+                    if (person != null) {
+                        document.getElementById("code").innerHTML =
+                            "Your order shall be send after address is entered!";
+                    }
                 }
-            }
-        </script>
+            </script>
 
-        <button onclick="address()">Enter Address</button>
-        <p id="address"></p>
-        <script>
-            function address() {
-                let person = prompt("Please enter your address");
-                if (person != null) {
-                    document.getElementById("address").innerHTML =
-                        "Thank you for your purchase! Depending on the distance it might take longer to deliver.";
+            <button onclick="address()">Enter Address</button>
+            <p id="address"></p>
+            <script>
+                function address() {
+                    let person = prompt("Please enter your address");
+                    if (person != null) {
+                        document.getElementById("address").innerHTML =
+                            "Thank you for your purchase! Depending on the distance it might take longer to deliver.";
+                    }
                 }
-            }
-        </script>
-        <br>
-        <h4 style="color:white;">Please find us at or the phone numbers in the contacts page:</h4>
-        <a href="mailto:stonekoreanrestaurant@gmail.com " target="_blank ">stonekoreanrestaurant@gmail.com</a>
-        <br>
-        <br>
+            </script>
+            <br>
+            <h4 style="color:white;">Please find us at or the phone numbers in the contacts page:</h4>
+            <a href="mailto:stonekoreanrestaurant@gmail.com " target="_blank ">stonekoreanrestaurant@gmail.com</a>
+            <br>
+            <br>
+        </div>
     </div>
 </body>
 

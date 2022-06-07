@@ -250,3 +250,8 @@ ul.nav li a:hover {
     grid-column: 2;
     grid-row: 8;
 }
+
+.order {
+    grid-column: 2/ span 2;
+    grid-row: 1;
+}
