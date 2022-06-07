@@ -12,9 +12,147 @@
     <!-- This is where to put your external css-->
     <link rel="stylesheet" href="CSS/style.css">
     <title>Specials</title>
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'pah8avf',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'pah8avf',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <style>
+        img {
+            border: 2px solid white;
+        }
+        
+        p {
+            font-family: ab-walk, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        h4 {
+            font-family: ab-walk, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="div">
+        <ul class="nav" style="z-index: 5; width: 100%;">
+            <h2 style="color: white; padding: 40px;">STONE</h2>
+            <h2 style="color: red; padding: 40px;">--------------------------------------------</h2>
+            <li class="active">
+                <a href="index.html">Intro</a>
+            </li>
+            <li>
+                <a href="specials.html">Specialties</a>
+            </li>
+            <li>
+                <a href="menus.html">Menu</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="order-now.html">Order</a>
+            </li>
+        </ul>
+    </div>
+    <div class="grid-containerm1">'
+        <div class="grid-itemm img1"><img src="Images/soft-tofu-soup.jpg" alt="bulgogi" width="650" height="400"></div>
+        <div class="grid-itemm txt1">
+            <p>This is soft tofu soup with shrimp, clams, egg, served with steamed rice.
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+        </div>
+        <div class="grid-itemm img2"><img src="Images/seafood-pancake.jpg" alt="bulgogi" width="650" height="400"></div>
+        <div class="grid-itemm txt2">
+            <p>This is seafood seafood-pancake made with pan-fried seafood (baby shrimp, baby octopus
+                <br>& calamari squid) pancake with green onions,served with soy dipping sauce.
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+        </div>
+        <div class="grid-itemm img3"><img src="Images/Hot-pot-bibimbob.jpg" alt="bulgogi" width="650" height="400"></div>
+        <div class="grid-itemm txt3">
+            <p>This is hot pot bibimbap with beef, carrots, shiitake mushrooms, zucchini, bean-
+                <br>sprouts, spinach. Topped with yolk of an egg. Served with steamed rice.
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+        </div>
+        <div class="grid-itemm img4"><img src="Images/kalbi.jpg" alt="bulgogi" width="650" height="400"></div>
+        <div class="grid-itemm txt4">
+            <p>This is Korean BBQ beef short ribs with Kalbi sauce served in two sizes with rice.
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+        </div>
+    </div>
 
 </body>
 
