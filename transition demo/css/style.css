@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(90, 117, 90);
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lightsalmon;
+    margin: 40px auto;
+    animation-name: square-to-circle;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 40px auto;
+    animation-name: circle-to-square;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes square-to-circle {
+    0% {
+        border-radius: 0;
+        background-color: navy;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 50% 0 0 0;
+        background-color: blue;
+        transform: rotate(45deg);
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        background-color: lightblue;
+        transform: rotate(90deg);
+    }
+    75% {
+        border: 50% 50% 50% 0;
+        background-color: blue;
+        transform: rotate(135deg);
+    }
+    100% {
+        border-radius: 50% 50% 50% 50%;
+        background-color: navy;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes circle-to-square {
+    100% {
+        border-radius: 0;
+        background-color: lightsalmon;
+        transform: rotate(180deg);
+    }
+    75% {
+        border-radius: 50% 0 0 0;
+        background-color: darksalmon;
+        transform: rotate(135deg);
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        background-color: salmon;
+        transform: rotate(90deg);
+    }
+    25% {
+        border: 50% 50% 50% 0;
+        background-color: darksalmon;
+        transform: rotate(45deg);
+    }
+    0% {
+        border-radius: 50% 50% 50% 50%;
+        background-color: lightsalmon;
+        transform: rotate(0deg);
+    }
+}
+
+p {
+    font-size: small;
+    color: aqua;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(95, 158, 95);
+    border-radius: 10px;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul {
+    font-family: ff-uberhand-text-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a:hover {
+    color: blanchedalmond;
+}
+
+.active {
+    background-color: rgb(228, 227, 227);
+}
