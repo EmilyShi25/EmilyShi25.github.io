@@ -11,6 +11,9 @@ p {
     color: white;
 }
 
+
+/* Copied/looked at from previous code that I wrote on navs as a refresher */
+
 ul.nav {
     list-style-type: none;
     margin: 0;
@@ -43,6 +46,9 @@ ul.nav li a:hover {
     color: white;
     border-top: solid;
 }
+
+
+/* looked at previous code written as a refresher*/
 
 .containerm {
     display: grid;
