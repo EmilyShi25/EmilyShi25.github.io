@@ -1,39 +1,24 @@
+/* I looked at some of my old code for grid and nav and copied some over and then altered them. But I don't think 
+I took anything from the outside besides something small in w3school. And right now I am not really satisfied with 
+style. This is mostly because I found really pretty backgrounds that I could work on but haven't found a 
+good way to make the text pop out*/
+
 body {
     background-color: rgb(21, 81, 148);
-}
-
-.div {
-    width: 1100px;
-    margin: 0px auto;
-    border: 1px solid rgb(1, 14, 57);
-    padding: 50px;
-    background-color: rgb(1, 14, 57);
-    border-radius: 12px;
 }
 
 p {
     color: white;
 }
 
-h1 {
-    color: white;
-}
-
-h2 {
-    color: white;
-}
-
-h3 {
-    color: white;
-}
-
 ul.nav {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 25px;
     overflow: hidden;
-    background-color: rgb(118, 158, 198);
-    border-radius: 5px;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 20px;
 }
 
 ul.nav li {
@@ -44,14 +29,101 @@ ul.nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 15px 20px;
+    padding: 15px 15px;
     text-decoration: none;
 }
 
-a:hover {
-    color: rgb(205, 255, 255);
+ul.nav li a:hover {
+    border-bottom: solid;
+    border-color: white;
+    color: cornsilk;
 }
 
 .active {
-    background-color: rgb(64, 95, 116);
+    color: white;
+    border-top: solid;
+}
+
+.containerm {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.genshin {
+    grid-column: 1;
+    grid-row: 1/ span 2;
+    /* background-color: rgba(171, 145, 237, 0.5); */
+    padding: 20px;
+    font-weight: bold;
+    border-right: double;
+    border-color: white;
+}
+
+.xiaopicturem {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.ganyupicturem {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.xiao {
+    grid-column: 1/ span 2;
+    grid-row: 3;
+    /* background-color: rgb(171, 145, 237, 0.5); I didn't end up using this one*/
+    text-align: center;
+    font-weight: bold;
+    border-bottom: double;
+    border-color: white;
+    padding: 10px;
+}
+
+.ganyu {
+    grid-column: 1/ span 2;
+    grid-row: 4;
+    /* background-color: rgb(171, 145, 237, 0.5); Same with this one */
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.prof {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.description {
+    grid-column: 2 span/4;
+    grid-row: 1;
+    padding: 30px;
+    border-left: double;
+    border-color: white;
+}
+
+.playstyle {
+    grid-column: 1/span 4;
+    grid-row: 2;
+    /* background-color: rgba(0, 0, 128, 0.4); */
+    padding: 30px;
+    border-top: double;
+    border-bottom: double;
+    border-color: white;
+}
+
+.compare {
+    grid-column: 1/span 4;
+    grid-row: 3;
+    /* background-color: rgba(0, 0, 128, 0.4); */
+    padding: 30px;
+    border-bottom: double;
+    border-color: white;
 }
