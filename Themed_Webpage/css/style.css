@@ -1,0 +1,108 @@
+body {
+    background-color: red;
+}
+
+p {
+    text-align: center;
+    color: rgb(227, 199, 138);
+    font-family: hellofont-id-shouxieqishu, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    padding: 0px;
+}
+
+h1 {
+    color: rgb(255, 196, 0);
+    text-align: center;
+    font-family: hellofont-id-shouxieqishu, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+h2 {
+    color: rgb(255, 196, 0);
+    font-family: hellofont-id-shouxieqishu, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+h3 {
+    color: rgb(255, 196, 0);
+    font-family: hellofont-id-shouxieqishu, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 35px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 10px;
+}
+
+.text {
+    margin-top: 30px;
+    grid-column: 2;
+    grid-row: 1/span 4;
+}
+
+.decoration {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+
+.decoration2 {
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;
+}
+
+.decoration3 {
+    grid-column: 1;
+    grid-row: 6;
+    text-align: center;
+}
+
+.decoration4 {
+    grid-column: 3;
+    grid-row: 6;
+    text-align: center;
+}
+
+.info {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.info2 {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.code1 {
+    grid-column: 1;
+    grid-row: 5;
+    text-align: center;
+}
+
+.code2 {
+    grid-column: 3;
+    grid-row: 5;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(230, 196, 86);
+    font-family: hellofont-id-shouxieqishu, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 20px;
+    border-color: rgb(145, 2, 2);
+    color: rgb(145, 2, 2);
+}
