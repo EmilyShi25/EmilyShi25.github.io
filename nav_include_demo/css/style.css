@@ -1,3 +1,36 @@
 Style.css .menu-item {
     font-weight: bold;
 }
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 25px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 20px;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+ul.nav li a:hover {
+    border-bottom: solid;
+    border-color: white;
+    color: cornsilk;
+}
+
+.active {
+    color: white;
+    border-top: solid;
+}
