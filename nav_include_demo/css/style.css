@@ -2,35 +2,31 @@ Style.css .menu-item {
     font-weight: bold;
 }
 
-ul.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 25px;
-    overflow: hidden;
-    font-weight: bold;
-    font-size: large;
-    border-radius: 20px;
+body {
+    background-color: azure;
 }
 
-ul.nav li {
-    float: left;
+h1 {
+    color: burlywood;
 }
 
-ul.nav li a {
-    display: block;
+.border {
+    background-color: rgb(195, 192, 192);
     color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: grey;
     text-align: center;
-    padding: 15px 15px;
-    text-decoration: none;
 }
 
-ul.nav li a:hover {
-    border-bottom: solid;
-    border-color: white;
-    color: cornsilk;
-}
-
-.active {
-    color: white;
-    border-top: solid;
+.image {
+    border-radius: 5px;
 }
