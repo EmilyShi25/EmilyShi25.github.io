@@ -10,7 +10,8 @@
 /* Source code: https://codepen.io/alvarotrigo/pen/MWEJEWG */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
+    font-size: large;
     margin: 0;
     height: 100%;
 }
@@ -20,9 +21,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    /* background: linear-gradient(to left, rgb(100, 143, 100), rgb(71, 130, 126)); */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: grey;
+    color: white;
     height: 50px;
     padding: 1em;
 }
@@ -36,6 +35,23 @@ body {
     color: white;
 }
 
+.nav {
+    height: 120px;
+    color: white;
+    background-color: rgba(124, 81, 43, 0.477);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: -50px;
+}
+
+.navinner {
+    float: left;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
 
 /* My Own code: */
 
@@ -46,22 +62,51 @@ p {
 .header {
     color: white;
     text-align: left;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    padding: 30px;
+    color: white;
+    background-color: #3333335d;
+}
+
+.divider {
+    float: left;
+    width: 100%;
+    padding: 40px 50px;
+    background-color: rgba(245, 236, 220, 0.879);
 }
 
 .left {
     float: left;
     width: 20%;
-    padding: 20px 10px;
+    padding: 20px 50px;
+    margin-top: 15px;
+    text-align: center;
 }
 
 .mainspecial {
     float: left;
-    width: 80%;
-    padding: 30px 75px;
+    width: 70%;
+    padding: 30px 150px;
+}
+
+.right {
+    float: left;
+    width: 10%;
+    padding: 15px 30px;
+    margin-top: 20px;
+}
+
+.service {
+    float: left;
+    width: 100%;
+    padding: 15px 30px;
+    margin-bottom: 35px;
+    background-color: rgba(245, 236, 220, 0.413)
+}
+
+.main {
+    float: left;
+    width: 100%;
+    margin-left: 275px;
 }
 
 .footer {
@@ -69,6 +114,7 @@ p {
     float: bottom;
     clear: both;
     /* If you see a float in the code and don't ignore it */
+    background-color: rgba(245, 236, 220, 0.879)
 }
 
 footer {
@@ -158,10 +204,17 @@ footer {
 
 @media(min-width:621px) and (max-width:1000px) {
     .mainspecial {
-        width: 100%;
+        width: 70%;
+        padding: 30px 60px;
     }
     .left {
         width: 100%;
+        text-align: center;
+    }
+    .right {
+        width: 30%;
+        padding: 0;
+        margin-top: 50px;
     }
     .nav a {
         width: 24.5%;
@@ -169,11 +222,21 @@ footer {
     .center {
         width: 20%;
     }
+    .main {
+        margin-left: 25px;
+    }
 }
 
 @media only screen and (max-width:620px) {
-    .left,
+    .left {
+        width: 100%;
+        text-align: center;
+    }
     .mainspecial {
+        width: 100%;
+        padding: 30px 50px;
+    }
+    .right {
         width: 100%;
     }
     .nav a {
@@ -181,6 +244,9 @@ footer {
     }
     .center {
         width: 50%;
+    }
+    .main {
+        margin-left: 90px;
     }
 }
 

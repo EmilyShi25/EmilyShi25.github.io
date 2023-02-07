@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emily | Hamburger Demo | Intro</title>
+    <title>Emily | FaceLift | Intro</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         /* Got .bg from w3schools full image page */
         
         .bg {
-            background-image: url(images/darkwarmbook.jpeg);
+            background-image: url(images/bookstoreouterwarm.jpeg);
             /* parallax scrolling taken from w3schools */
             background-attachment: fixed;
             height: 100%;
@@ -19,42 +19,70 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        /* Everthing down here was taken from w3school, to help with creating an image gallery */
+        
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+        
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+        
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+        
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
     <div class="bg">
         <!-- code found on: https://codepen.io/alvarotrigo/pen/MWEJEWG -->
-        <section class="top-nav">
-            <div>
-                Logo Here
+        <div class="nav">
+            <div class="navinner">
+                <section class="top-nav">
+                    <div>
+                        Logo Here
+                    </div>
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Calendar</a>
+                        </li>
+                        <li>
+                            <a href="#">Purchase</a>
+                        </li>
+                        <li>
+                            <a href="#">Monthly Book Rec</a>
+                        </li>
+                    </ul>
+                </section>
             </div>
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-        <div class='menu-button'></div>
-      </label>
-            <ul class="menu">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="howl's.html">Howl's Moving Castle</a>
-                </li>
-                <li>
-                    <a href="ponyo.html">Ponyo</a>
-                </li>
-                <li>
-                    <a href="spirit.html">Spirited Away</a>
-                </li>
-            </ul>
-        </section>
+        </div>
+        <br>
         <br>
         <br>
         <br>
         <br>
         <br>
         <div class="header">
-            <h1>Studio Ghibli Movies</h1>
+            <h1>Book Tree</h1>
+            <p style="text-align: center; color: white;">"What I say is, a town isn't a town without a bookstore. It may call itself a town but unless it's got a bookstore, it knows it's not foolin' a soul." - Neil Gaiman</p>
         </div>
         <br>
         <br>
@@ -69,33 +97,104 @@
         <br>
     </div>
     <div class="container">
-
-
-        <div class="left">
-            <img src="images/hayao.jpeg" alt="image of hayao miyazaki" class="center" style="border-radius: 500px;">
+        <div class="divider">
+            <p>"Our goal is to help every book browser find an interesting satisfying new or gently-used book. We host book clubs, offer special author events, workshops and readings. BookTree is a sanctuary for book lovers and a community gathering place.
+                See YOU soon!" - Christopher J. Jarmick – Co-Founder of BookTree Kirkland </p>
         </div>
-
-        <div class="mainspecial">
-            <h2>Background:</h2>
-            <p>Studio Ghibli is a Japanese animation film studio founded in 1985 by Hayao Miyazaki, Isao Takahata, and Toshio Suzuki. The studio is known for producing critically acclaimed and commercially successful anime films, such as Spirited Away, My
-                Neighbor Totoro, and Princess Mononoke. The films often feature strong female protagonists and explore themes such as environmentalism and the importance of family and community. Studio Ghibli's films have been widely praised for their
-                animation, storytelling, and attention to detail.</p>
-            <h2>History:</h2>
-            <p>The studio's name, "Ghibli," is the Italian word for "hot wind blowing through the Sahara desert" and was chosen because the founders wanted their studio to "blow a new wind through the anime industry." Studio Ghibli's first film was Castle
-                in the Sky, directed by Miyazaki and released in 1986. The film was a commercial and critical success, and established Studio Ghibli as a major player in the anime industry. In 1988, Studio Ghibli released My Neighbor Totoro, which became
-                a cultural phenomenon in Japan and established the studio's reputation for creating films that appeal to both children and adults. In 2001, the studio released Spirited Away, which won the Academy Award for Best Animated Feature and is
-                considered one of the greatest animated films of all time. The studio continued to release successful and critically acclaimed films such as Howl's Moving Castle, Ponyo and The Wind Rises. In 2018, Studio Ghibli announced that it would
-                be taking a break from producing new films, but it will continue to work on other projects such as video games, theme park attractions, and merchandise.</p>
+        <div class="left">
+            <h3>Store Hours</h3>
+            <p>11:30 am - 5:30 pm</p>
             <p>
-                <br>
-                <br>
-                <br>
-                <br>
+                <br>Monday
+                <br>Tuesday
+                <br>Wednesday
+                <br>Friday
+                <br>Saturday
+            </p>
+            <br>
+            <h3>Location:</h3>
+            <p>
+                <br>609 Market St.
+                <br>Kirkland Wa. 98033
             </p>
         </div>
 
+        <div class="mainspecial">
+
+            <h2>History</h2>
+            <p>The old book store has a long history of being a favorite hangout spot for kids in the community. With its inviting atmosphere, comfortable seating, and friendly staff, the store has provided a safe and inspiring place for young readers to
+                discover new books and immerse themselves in the world of imagination and learning. Generations of local children have flocked to the store to peruse the shelves and indulge in the joys of literature, making it a beloved destination for
+                families. This tradition continues to this day, solidifying the store's reputation as a hub of literary activity and a haven for young book lovers.
+            </p>
+            <br>
+            <br>
+            <h3>Reading Circle</h3>
+            <p>Reading Circle is our in-store book club. We are having ‘live’ in-store meetings again on Tuesday, July 12th, 2022 at 6:30pm please be vaccinated and bring a mask with you. We are reading Slaughter House Five by Kurt Vonnegut Jr. Copies for
+                sale in store. Other upcoming events include First Saturday workshop, reading and open mic on Saturday July2nd (FREE) Workshop 4:30 to 6pm Reading 6:15 to 8:07pm. See Calendar listings for more details on upcoming events!</p>
+            <br>
+            <br>
+        </div>
+
+        <div class="right">
+            <img src="images/profilep1.jpg" class="center" style="border-radius: 500px;" alt="profile pic 1">
+            <br>
+            <br>
+            <img src="images/profilep2.jpg" class="center" style="border-radius: 500px;" alt="profile pic 2">
+            <br>
+            <br>
+            <img src="images/profilep3.jpg" class="center" style="border-radius: 500px;" alt="profile pic 3">
+        </div>
+
+        <div class="service">
+            <h3>Curbside Service</h3>
+            <p>Order a book and/or Curbside Service available. Email booktreekirkland1@gmail.com remember to include YOUR phone number or call 425-202-7791 (during business hours) for details or service. Curbside Service available at these times: 11:45 to
+                4:45 pm Mondays ,Tuesdays, Wednesdays, Fridays and Saturdays. No Curbside Service available Thursdays or Sundays.</p>
+        </div>
+        <div class="main">
+            <h3>Recomended books</h3>
+            <!-- Taken from w3school on how to create an image gallery -->
+            <div class="gallery">
+                <a target="_blank" href="images/book1.jpg">
+                    <img src="images/book1.jpg" alt="book 1" width="600" height="400">
+                </a>
+                <div class="desc">我俩的故事</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/book1.jpg">
+                    <img src="images/book1.jpg" alt="book 1" width="600" height="400">
+                </a>
+                <div class="desc">我俩的故事</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/book1.jpg">
+                    <img src="images/book1.jpg" alt="book 1" width="600" height="400">
+                </a>
+                <div class="desc">我俩的故事</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/book1.jpg">
+                    <img src="images/book1.jpg" alt="book 1" width="600" height="400">
+                </a>
+                <div class="desc">我俩的故事</div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
         <div class="footer">
-            <footer>Emily &copy; 2023</footer>
+            <footer style="text-align: center;">
+                <br>Booktree &copy; 2023
+                <br>
+                <br>
+                <br> • 609 Market St, Kirkland, WA 98033 • (425) 202-7791
+            </footer>
         </div>
 
     </div>
