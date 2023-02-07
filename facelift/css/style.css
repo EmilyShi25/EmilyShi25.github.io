@@ -35,6 +35,9 @@ body {
     color: white;
 }
 
+
+/* My Own code: */
+
 .nav {
     height: 120px;
     color: white;
@@ -51,9 +54,6 @@ body {
     position: sticky;
     top: 0;
 }
-
-
-/* My Own code: */
 
 p {
     color: rgb(79, 79, 79);
@@ -107,6 +107,7 @@ p {
     float: left;
     width: 100%;
     margin-left: 275px;
+    margin-right: 0%;
 }
 
 .footer {
