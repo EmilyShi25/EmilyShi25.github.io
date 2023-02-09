@@ -104,16 +104,10 @@ p {
 }
 
 .main {
-    float: inherit;
-    margin: 0 auto;
-    width: 1000px;
-}
-
-div.gallery {
     float: left;
-    margin: 1%;
-    border: 1px solid #ccc;
-    width: 23%;
+    width: 100%;
+    margin-left: 275px;
+    margin-right: 0%;
 }
 
 .footer {
