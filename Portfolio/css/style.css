@@ -24,28 +24,32 @@ body {
     margin-bottom: 75px;
     margin-right: 45px;
     margin-left: 105px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 5px grey;
+    /* border-radius: 20px; */
+    overflow-y: scroll;
 }
 
 .main {
     float: left;
-    width: 70%;
-    border-radius: 20px;
+    width: 80%;
+    /* border-radius: 20px; */
 }
 
 .right {
     float: left;
-    width: 30%;
-    height: 500px;
+    width: 20%;
+    height: 600px;
     border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    /* border-bottom-right-radius: 20px; */
     margin-top: -50px;
 }
 
 .footer {
     float: left;
     width: 100%;
+    background: black;
+    margin-top: 0;
+    color: white;
+    padding: 10px 50px;
 }
 
 .top-nav {
@@ -54,18 +58,37 @@ body {
     align-items: center;
     justify-content: space-between;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: brown;
+    color: rgb(174, 173, 173);
+    background-color: #222;
+    /* border-top-right-radius: 20px; */
     height: 50px;
     padding: 1em;
+    position: sticky;
+    top: 0;
 }
 
 .top-nav a {
     text-decoration: none;
-    color: brown;
+    color: rgb(174, 173, 173);
 }
 
 .top-nav a:hover {
-    color: grey;
+    color: whitesmoke;
+}
+
+.nav {
+    color: white;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: -50px;
+}
+
+.nav-inner {
+    float: left;
+    width: 100%;
+    position: sticky;
+    top: 0;
 }
 
 

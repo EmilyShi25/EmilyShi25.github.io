@@ -51,7 +51,7 @@ body {
 pre code {
     /*combined the pre and code tag right here*/
     background-color: #eee;
-    border: 1px solid #999;
+    border: 1px solid #a69595;
     display: block;
     /* display: block keep you from going too far */
     padding: 20px;
