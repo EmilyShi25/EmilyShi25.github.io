@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Shi | Parallax Scrolling | Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .parallax {
+            background-image: url(images/desk.png);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            min-height: 100vh;
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        p {
+            background-color: beige;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- code found on: https://codepen.io/alvarotrigo/pen/MWEJEWG -->
+    <section class="top-nav">
+        <div>
+            <img src="images/desk.png" alt="image of a drawing" width="5%">
+        </div>
+        <input id="menu-toggle " type="checkbox " />
+        <label class='menu-button-container' for="menu-toggle ">
+        <div class='menu-button'></div>
+        </label>
+        <ul class="menu ">
+            <li>
+                <a href="index.html ">Home</a>
+            </li>
+            <li>
+                <a href="# ">About</a>
+            </li>
+            <li>
+                <a href="# ">More</a>
+            </li>
+            <li>
+                <a href="# ">Contact</a>
+            </li>
+        </ul>
+    </section>
+    <div class="nav "></div>
+    <div class="parallax ">
+        <p>Trying out Parallax Scrolling</p>
+    </div>
+
+    <div class="parallax ">
+        <p>This is cool because even though I know how to do it, I didn't apply it the same way. This will definitely be helpful to me in the future</p>
+    </div>
+    <div class="parallax ">
+        <p>I might incorporate something like this onto my profolio because I like how minimalistic it can become.</p>
+    </div>
+</body>
+
+</html>
