@@ -157,8 +157,7 @@
             /* border-radius: 20px; */
         }
         .right {
-            float: left;
-            width: 100%;
+            width: 0%;
         }
     }
     
@@ -172,6 +171,9 @@
         }
         .center {
             width: 50%;
+        }
+        .right {
+            width: 0%;
         }
     }
     /* Found code on: https://codepen.io/alvarotrigo/pen/MWEJEWG */
