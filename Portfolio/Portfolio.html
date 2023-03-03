@@ -10,6 +10,19 @@
     <style>
         /* Got .bg from w3schools full image page */
         
+        .parallax {
+            background-image: url(images/bgtester.jpeg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            min-height: 100vh;
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
         .main,
         html {
             height: 100%;
@@ -44,7 +57,7 @@
         <!-- code found on: https://codepen.io/alvarotrigo/pen/MWEJEWG -->
         <section class="top-nav">
             <div>
-                Logo Here
+                <img src="images/temporarylogo.jpg" alt="img of logo" style="border-radius: 500px;" width="40px">
             </div>
             <input id="menu-toggle" type="checkbox" />
             <label class='menu-button-container' for="menu-toggle">
@@ -71,14 +84,26 @@
                 </li>
             </ul>
         </section>
-        <div style="margin-left: 30px">
-            <p>Portfolio page - Pretty self-explanatory, but this page should be a gallery of past works. Be sure to have at least 12 different projects. If you are choosing different mediums, be sure they are split up and noted appropriately.</p>
-            <h2>
-                Works:
-            </h2>
-            <p>Art:</p>
-            <p>Photography:</p>
-            <p>Writing:</p>
+        <div class="parallax">
+            <div style="margin-left: 30px">
+                <h1>
+                    Works/多品:
+                </h1>
+                <h2>Sketching Still life:</h2>
+                <img src="images/eye.jpg" alt="image of a sketch of an eye" width="350px">
+                <p>This is an image of the eye that I drew.
+                    <br>This is the piece that I am the most attached to because I learned so much on how shadows work and how to make certain features pop with black, grey and white.
+                </p>
+                <img src="images/ear.jpg" alt="Image of a sketch of an ear" width="500px">
+                <p>The ear was the next drawing right after the eye. In this I was able to test out the skills that I learned before.</p>
+                <p>This is the </p>
+                <h2>Photography:</h2>
+                <img src="images/photoofleaves.jpg" alt="photo of a leaf" width="500px">
+                <p>I took this photo while walking to the bus station this school year. It felt so freeing looking up at the clear skys through the yellow leaves.
+                    <br>I wanted to treasure this moment so I took a photo. And then went back home to edit it a little.
+                </p>
+                <h2></h2>
+            </div>
         </div>
         <div class="footer">
             <footer>Emily</footer>
