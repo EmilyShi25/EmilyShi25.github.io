@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+    /* border-box, make sure that we push within the div rather than pushing away from the div */
+}
+
+
+/* Star stands for everything */
+
+
+/* Source code: https://codepen.io/alvarotrigo/pen/MWEJEWG */
+
+body {
+    font-family: monospace;
+    font-size: large;
+    margin: 0;
+    height: 100%;
+}
+
+.page {
+    float: left;
+    width: 1050px;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    margin-right: 45px;
+    margin-left: 125px;
+    /* border-radius: 20px; */
+    overflow: scroll;
+}
+
+.main {
+    float: left;
+    width: 100%;
+    /* border-radius: 20px; */
+}
+
+.right {
+    float: left;
+    width: 20%;
+    height: 600px;
+    border-top-right-radius: 20px;
+    /* border-bottom-right-radius: 20px; */
+    margin-top: -50px;
+}
+
+
+/* The Following is code taken from codepen.io on the footer/it is a footer template */
+
+.site-footer {
+    background-color: #26272b;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+    float: left;
+    width: 100%;
+    margin-top: 0;
+    color: white;
+    padding: 10px 50px;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.instagram:hover {
+    background-color: #e78bbd
+}
+
+.social-icons a.spotify:hover {
+    background-color: #175111
+}
+
+.social-icons a.pinterest:hover {
+    background-color: #b60000
+}
+
+.social-icons a.email:hover {
+    background-color: #4ca8ea
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
+
+
+/* Own Code: */
+
+.footer {}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgb(174, 173, 173);
+    background-color: #222;
+    /* border-top-right-radius: 20px; */
+    height: 50px;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: rgb(174, 173, 173);
+}
+
+.top-nav a:hover {
+    color: whitesmoke;
+}
+
+
+/* Code from: https://codepen.io/alvarotrigo/pen/MWEJEWG */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu>li {
+    margin: 0 1rem;
+    overflow: hidden;
+    color: grey;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+@media(min-width:621px) and (max-width:1000px) {
+    .page {
+        float: left;
+        width: 500px;
+        height: 650px;
+        margin-top: 200px;
+        margin-bottom: 75px;
+        margin-right: 45px;
+        margin-left: 168px;
+        /* border-radius: 20px; */
+        overflow: scroll;
+    }
+    .main {
+        float: left;
+        width: 100%;
+        /* border-radius: 20px; */
+    }
+    .right {
+        width: 0%;
+    }
+}
+
+@media only screen and (max-width:620px) {
+    .left,
+    .mainspecial {
+        width: 100%;
+    }
+    .nav a {
+        width: 24%;
+    }
+    .center {
+        width: 50%;
+    }
+    .right {
+        width: 0%;
+    }
+}
+
+
+/* Found code on: https://codepen.io/alvarotrigo/pen/MWEJEWG */
+
+@media (max-width: 1000px) {
+    .menu-button-container {
+        display: flex;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-toggle~.menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked~.menu li {
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+    }
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+}
