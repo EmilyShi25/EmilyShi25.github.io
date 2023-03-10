@@ -13,11 +13,34 @@
     <style>
         /* Got .bg from w3schools full image page */
         
+        .parallax {
+            background-image: url(images/tester2.jpeg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            min-height: 100vh;
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
         .main,
         html {
             height: 100%;
             margin: 0;
             text-align: center;
+        }
+        
+        .main {
+            height: 2840px;
+        }
+        
+        .right {
+            background-color: rgb(49, 48, 48);
+            color: white;
+            height: 2940px;
         }
         
         body {
@@ -30,15 +53,66 @@
             background-color: white;
         }
         
-        .right {
-            background-image: url(images/portfolioimg1.jpeg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+        h1 {
+            margin: 50px;
+            color: white;
+            font-style: italic;
         }
         
         footer {
             text-align: left;
+        }
+        
+        @media(min-width:621px) and (max-width:1000px) {
+            .page {
+                float: left;
+                width: 500px;
+                height: 650px;
+                margin-top: 200px;
+                margin-bottom: 75px;
+                margin-right: 45px;
+                margin-left: 168px;
+                /* border-radius: 20px; */
+                overflow: scroll;
+            }
+            .main {
+                float: left;
+                width: 100%;
+                margin-bottom: -300px;
+                /* border-radius: 20px; */
+            }
+            .right {
+                width: 100%;
+                height: 600px;
+            }
+        }
+        
+        @media only screen and (max-width:620px) {
+            .img {
+                width: 75%;
+            }
+            .page {
+                float: left;
+                margin: 0%;
+                width: 375px;
+                height: 650px;
+                /* border-radius: 20px; */
+                overflow: scroll;
+            }
+            .main {
+                width: 100%;
+                height: 1500px;
+            }
+            .nav a {
+                width: 24%;
+            }
+            .center {
+                width: 50%;
+            }
+            .right {
+                width: 100%;
+                height: 400px;
+            }
         }
     </style>
 </head>
@@ -48,7 +122,7 @@
         <!-- code found on: https://codepen.io/alvarotrigo/pen/MWEJEWG -->
         <section class="top-nav">
             <div>
-                Logo Here
+                <img src="images/temporarylogo.jpg" alt="img of logo" style="border-radius: 500px;" width="40px">
             </div>
             <input id="menu-toggle" type="checkbox" />
             <label class='menu-button-container' for="menu-toggle">
@@ -76,11 +150,21 @@
             </ul>
         </section>
         <div class="main">
-
+            <div class="parallax">
+                <h1>Inspirations:</h1>
+                <img src="images/childhoodnost.JPG" alt="watercolor street" width="550px" style="margin-bottom: 50px;">
+                <img src="images/funkycolors.jpg" alt="drawing with funky colors" width="550px" style="margin-bottom: 50px;">
+                <img src="images/warmnight.jpg" alt="studio ghibli spirited away" width="550px" style="margin-bottom: 50px;">
+                <img src="images/bg1.jpeg" alt="drawing of schoolbus in the fall" width="550px" style="margin-bottom: 50px;">
+                <img src="images/kiki'sdeliveryservice.jpeg" alt="drawing of kiki's delivery service" width="550px" style="margin-bottom: 50px;">
+                <!-- Code taken from the midterm and https://codepen.io/scanfcode/pen/MEZPNd -->
+            </div>
         </div>
-
-
-        <!-- Code taken from the midterm and https://codepen.io/scanfcode/pen/MEZPNd -->
+        <div class="right">
+            <p style="margin: 100px 10px; text-align: left;">When looking at drawings, I tend to be drawn to those with good color balance and just a general emotion when I look at it. For example, the image from spirited away had mostly dark colors but the warm light from the lamp provided contrast
+                and gave it a general warm feeling. The image with the schoolbus used tones that are similar to eachother making it very pleasing on the eyes. Another pattern that I realized is that I tend to like drawings with a story behind it. All
+                of these images has one or two characters inside, doing something.</p>
+        </div>
         <footer class="site-footer">
             <div class="container">
                 <div class="row" style="margin-top: 20px;">
@@ -155,7 +239,6 @@
                 </div>
             </div>
         </footer>
-    </div>
 </body>
 
 </html>
