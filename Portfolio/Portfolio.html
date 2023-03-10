@@ -14,7 +14,7 @@
         /* Got .bg from w3schools full image page */
         
         .parallax {
-            background-image: url(images/bgtester.jpeg);
+            background-image: url(images/tester2.jpeg);
             background-attachment: fixed;
             background-position: center;
             background-size: cover;
@@ -30,6 +30,17 @@
         html {
             height: 100%;
             margin: 0;
+            text-align: center;
+        }
+        
+        .main {
+            height: 4260px;
+        }
+        
+        .right {
+            background-color: rgb(49, 48, 48);
+            color: white;
+            height: 4320px;
         }
         
         body {
@@ -42,15 +53,62 @@
             background-color: white;
         }
         
-        .right {
-            background-image: url(images/portfolioimg1.jpeg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+        h1 {
+            margin: 50px;
+            color: rgb(175, 220, 127);
+            font-style: italic;
         }
         
         footer {
             text-align: left;
+        }
+        
+        @media(min-width:621px) and (max-width:1000px) {
+            .page {
+                float: left;
+                width: 500px;
+                height: 650px;
+                margin-top: 200px;
+                margin-bottom: 75px;
+                margin-right: 45px;
+                margin-left: 168px;
+                /* border-radius: 20px; */
+                overflow: scroll;
+            }
+            .main {
+                float: left;
+                width: 100%;
+                margin-bottom: -300px;
+                /* border-radius: 20px; */
+            }
+            .right {
+                width: 100%;
+                height: 600px;
+            }
+        }
+        
+        @media only screen and (max-width:620px) {
+            .page {
+                float: left;
+                margin: 0%;
+                width: 375px;
+                height: 650px;
+                /* border-radius: 20px; */
+                overflow: scroll;
+            }
+            .main {
+                width: 100%;
+            }
+            .nav a {
+                width: 24%;
+            }
+            .center {
+                width: 50%;
+            }
+            .right {
+                width: 100%;
+                height: 600px;
+            }
         }
     </style>
 </head>
@@ -74,43 +132,38 @@
                     <a href="about.html">About</a>
                 </li>
                 <li>
-                    <a href="Portfolio.html">Works</a>
+                    <a href="Portfolio.html">Sketches</a>
                 </li>
                 <li>
-                    <a href="current.html">Current Works</a>
+                    <a href="current.html">Photos</a>
                 </li>
                 <li>
-                    <a href="more.html">More?</a>
+                    <a href="more.html">Inspiration</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
         </section>
-        <div class="parallax">
-            <div style="margin-left: 30px">
-                <h1>
-                    Works/多品:
-                </h1>
-                <h2>Sketching Still life:</h2>
-                <img src="images/eye.jpg" alt="image of a sketch of an eye" width="350px">
-                <p>This is an image of the eye that I drew.
-                    <br>This is the piece that I am the most attached to because I learned so much on how shadows work and how to make certain features pop with black, grey and white.
-                </p>
-                <img src="images/ear.jpg" alt="Image of a sketch of an ear" width="500px">
-                <p>The ear was the next drawing right after the eye. In this I was able to test out the skills that I learned before.</p>
-                <p>This is the </p>
-                <h2>Photography:</h2>
-                <img src="images/photoofleaves.jpg" alt="photo of a leaf" width="500px">
-                <p>I took this photo while walking to the bus station this school year. It felt so freeing looking up at the clear skys through the yellow leaves.
-                    <br>I wanted to treasure this moment so I took a photo. And then went back home to edit it a little.
-                </p>
-                <h2></h2>
+        <div class="main">
+            <div class="parallax">
+                <h1>My Progression in Sketching:</h1>
+                <img src="images/firstdrawing.jpg" alt="drawing of sphere and cube" style="margin-bottom: 60px;">
+                <img src="images/wineplateappleegg.jpg" alt="drawing of wine, plate, egg, and apple" style="margin-bottom: 60px;">
+                <img src="images/geometricmouth.jpg" alt="drawing of geometric mouth" style="margin-bottom: 60px;">
+                <img src="images/mouth.jpg" alt="drawing of mouth" style="margin-bottom: 60px;">
+                <img src="images/geometriceye.jpg" alt="drawing of a geometric eye" style="margin-bottom: 60px;">
+                <img src="images/eye.jpg" alt="drawing of an eye" width="550px" style="margin-bottom: 60px;">
+                <img src="images/ear.jpg" alt="image of a sketch of an ear" width="550px" style="margin-bottom: 60px;">
+                <!-- Code taken from the midterm and https://codepen.io/scanfcode/pen/MEZPNd -->
             </div>
         </div>
-
-
-        <!-- Code taken from the midterm and https://codepen.io/scanfcode/pen/MEZPNd -->
+        <div class="right">
+            <p style="margin: 100px 10px; text-align: left;">I started taking drawing lessons somewhere during freshman year. The first two pieces were basically me trying it out and learning about shapes. The third one I did is to help me understand the dimensions of the mouth and how light hits it.
+                Its basically practice before drawing the actual mouth. The one after that is the same thing, understanding the shape of an eye and then actually drawing it out. I think the drawing of the eye is my best piece yet. Some struggles I had
+                in the beginning was that all classes were online so I wasn't able to get as much guidance. The eye is the first piece I did in an actual studio. But there are also problems with drawing in a studio as well since the lighting and set up
+                changes from time to time and its hard to get it to looked exactly like it did before.</p>
+        </div>
         <footer class="site-footer">
             <div class="container">
                 <div class="row" style="margin-top: 20px;">
@@ -185,7 +238,6 @@
                 </div>
             </div>
         </footer>
-    </div>
 </body>
 
 </html>
